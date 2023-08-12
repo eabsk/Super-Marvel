@@ -6,7 +6,7 @@ target 'SuperMarvel' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Super-Marvel
+  # Pods for SuperMarvel
 
   target 'SuperMarvelTests' do
     inherit! :search_paths
