@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1FA2F8F7154871E4FAFF63 /* Pods_Super_Marvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DCCDB836E39DADB31A0A82 /* Pods_Super_Marvel.framework */; };
-		2CAFCC4A0A3ED90CEFE6EBCB /* Pods_Super_MarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AB74635C49A07030C3F9CE /* Pods_Super_MarvelTests.framework */; };
-		5FE24DD803C5A851C2F4965D /* Pods_Super_Marvel_Super_MarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957D4B90F14A84D8CEAD5026 /* Pods_Super_Marvel_Super_MarvelUITests.framework */; };
+		0FA329C7AAF1E06796F31C13 /* Pods_SuperMarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E767412EEB5CB6381CF208B1 /* Pods_SuperMarvelTests.framework */; };
+		3133C9822BAF3D76B722DAE1 /* Pods_SuperMarvel_SuperMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4095B300CF441334CA22A0F /* Pods_SuperMarvel_SuperMarvelUITests.framework */; };
+		8BB363F2871B44C57E4E6C4C /* Pods_SuperMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192AFA2A913943C4EB4C3B8E /* Pods_SuperMarvel.framework */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
 		A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */; };
-		A2D7E0062A881A2100E7BA04 /* Super_MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0052A881A2100E7BA04 /* Super_MarvelTests.swift */; };
-		A2D7E0102A881A2100E7BA04 /* Super_MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E00F2A881A2100E7BA04 /* Super_MarvelUITests.swift */; };
-		A2D7E0122A881A2100E7BA04 /* Super_MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0112A881A2100E7BA04 /* Super_MarvelUITestsLaunchTests.swift */; };
+		A2D7E0062A881A2100E7BA04 /* SuperMarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0052A881A2100E7BA04 /* SuperMarvelTests.swift */; };
+		A2D7E0102A881A2100E7BA04 /* SuperMarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E00F2A881A2100E7BA04 /* SuperMarvelUITests.swift */; };
+		A2D7E0122A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0112A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,25 +36,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		192AFA2A913943C4EB4C3B8E /* Pods_SuperMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6C49B7FF61752DA7C527AB /* Pods-Super-Marvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel.release.xcconfig"; path = "Target Support Files/Pods-Super-Marvel/Pods-Super-Marvel.release.xcconfig"; sourceTree = "<group>"; };
 		523E85AE1020D966AA389C35 /* Pods-Super-Marvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel.debug.xcconfig"; path = "Target Support Files/Pods-Super-Marvel/Pods-Super-Marvel.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBB8CA1A59C2ECA73126DF0 /* Pods-Super-MarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-MarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-Super-MarvelTests/Pods-Super-MarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		62DCCDB836E39DADB31A0A82 /* Pods_Super_Marvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Super_Marvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBAEF6BCE2692D6E64879E2 /* Pods-SuperMarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E1DF326656747FDD6876A3F /* Pods-Super-MarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-MarvelTests.release.xcconfig"; path = "Target Support Files/Pods-Super-MarvelTests/Pods-Super-MarvelTests.release.xcconfig"; sourceTree = "<group>"; };
-		957D4B90F14A84D8CEAD5026 /* Pods_Super_Marvel_Super_MarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Super_Marvel_Super_MarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9416A8967997C4ED2D40C2D8 /* Pods-SuperMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		9D26075D346C515780F73A24 /* Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-Super-Marvel-Super-MarvelUITests/Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A2D7DFEB2A881A1D00E7BA04 /* Super-Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super-Marvel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2D7DFFA2A881A2000E7BA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2D7DFFC2A881A2000E7BA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2D7E0012A881A2100E7BA04 /* Super-MarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super-MarvelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2D7E0052A881A2100E7BA04 /* Super_MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_MarvelTests.swift; sourceTree = "<group>"; };
-		A2D7E00B2A881A2100E7BA04 /* Super-MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super-MarvelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2D7E00F2A881A2100E7BA04 /* Super_MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_MarvelUITests.swift; sourceTree = "<group>"; };
-		A2D7E0112A881A2100E7BA04 /* Super_MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B4AB74635C49A07030C3F9CE /* Pods_Super_MarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Super_MarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7E0012A881A2100E7BA04 /* SuperMarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperMarvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7E0052A881A2100E7BA04 /* SuperMarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarvelTests.swift; sourceTree = "<group>"; };
+		A2D7E00B2A881A2100E7BA04 /* SuperMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7E00F2A881A2100E7BA04 /* SuperMarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarvelUITests.swift; sourceTree = "<group>"; };
+		A2D7E0112A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D0C208AF4300806F20F9F9 /* Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig"; path = "Target Support Files/Pods-Super-Marvel-Super-MarvelUITests/Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4095B300CF441334CA22A0F /* Pods_SuperMarvel_SuperMarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvel_SuperMarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E767412EEB5CB6381CF208B1 /* Pods_SuperMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95216DCD13E60D1B78EA699 /* Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1FA2F8F7154871E4FAFF63 /* Pods_Super_Marvel.framework in Frameworks */,
+				8BB363F2871B44C57E4E6C4C /* Pods_SuperMarvel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CAFCC4A0A3ED90CEFE6EBCB /* Pods_Super_MarvelTests.framework in Frameworks */,
+				0FA329C7AAF1E06796F31C13 /* Pods_SuperMarvelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FE24DD803C5A851C2F4965D /* Pods_Super_Marvel_Super_MarvelUITests.framework in Frameworks */,
+				3133C9822BAF3D76B722DAE1 /* Pods_SuperMarvel_SuperMarvelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,12 @@
 				9D26075D346C515780F73A24 /* Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig */,
 				5DBB8CA1A59C2ECA73126DF0 /* Pods-Super-MarvelTests.debug.xcconfig */,
 				8E1DF326656747FDD6876A3F /* Pods-Super-MarvelTests.release.xcconfig */,
+				BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */,
+				9416A8967997C4ED2D40C2D8 /* Pods-SuperMarvel.release.xcconfig */,
+				E95216DCD13E60D1B78EA699 /* Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig */,
+				A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */,
+				7FBAEF6BCE2692D6E64879E2 /* Pods-SuperMarvelTests.debug.xcconfig */,
+				B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -101,9 +113,9 @@
 		A2D7DFE22A881A1D00E7BA04 = {
 			isa = PBXGroup;
 			children = (
-				A2D7DFED2A881A1D00E7BA04 /* Super-Marvel */,
-				A2D7E0042A881A2100E7BA04 /* Super-MarvelTests */,
-				A2D7E00E2A881A2100E7BA04 /* Super-MarvelUITests */,
+				A2D7DFED2A881A1D00E7BA04 /* SuperMarvel */,
+				A2D7E0042A881A2100E7BA04 /* SuperMarvelTests */,
+				A2D7E00E2A881A2100E7BA04 /* SuperMarvelUITests */,
 				A2D7DFEC2A881A1D00E7BA04 /* Products */,
 				19508B2368EF4FAAD97B92DD /* Pods */,
 				F411BBFF39C2D5A40CA23EB7 /* Frameworks */,
@@ -113,14 +125,14 @@
 		A2D7DFEC2A881A1D00E7BA04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2D7DFEB2A881A1D00E7BA04 /* Super-Marvel.app */,
-				A2D7E0012A881A2100E7BA04 /* Super-MarvelTests.xctest */,
-				A2D7E00B2A881A2100E7BA04 /* Super-MarvelUITests.xctest */,
+				A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */,
+				A2D7E0012A881A2100E7BA04 /* SuperMarvelTests.xctest */,
+				A2D7E00B2A881A2100E7BA04 /* SuperMarvelUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2D7DFED2A881A1D00E7BA04 /* Super-Marvel */ = {
+		A2D7DFED2A881A1D00E7BA04 /* SuperMarvel */ = {
 			isa = PBXGroup;
 			children = (
 				A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */,
@@ -128,32 +140,32 @@
 				A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */,
 				A2D7DFFC2A881A2000E7BA04 /* Info.plist */,
 			);
-			path = "Super-Marvel";
+			path = SuperMarvel;
 			sourceTree = "<group>";
 		};
-		A2D7E0042A881A2100E7BA04 /* Super-MarvelTests */ = {
+		A2D7E0042A881A2100E7BA04 /* SuperMarvelTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2D7E0052A881A2100E7BA04 /* Super_MarvelTests.swift */,
+				A2D7E0052A881A2100E7BA04 /* SuperMarvelTests.swift */,
 			);
-			path = "Super-MarvelTests";
+			path = SuperMarvelTests;
 			sourceTree = "<group>";
 		};
-		A2D7E00E2A881A2100E7BA04 /* Super-MarvelUITests */ = {
+		A2D7E00E2A881A2100E7BA04 /* SuperMarvelUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A2D7E00F2A881A2100E7BA04 /* Super_MarvelUITests.swift */,
-				A2D7E0112A881A2100E7BA04 /* Super_MarvelUITestsLaunchTests.swift */,
+				A2D7E00F2A881A2100E7BA04 /* SuperMarvelUITests.swift */,
+				A2D7E0112A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift */,
 			);
-			path = "Super-MarvelUITests";
+			path = SuperMarvelUITests;
 			sourceTree = "<group>";
 		};
 		F411BBFF39C2D5A40CA23EB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62DCCDB836E39DADB31A0A82 /* Pods_Super_Marvel.framework */,
-				957D4B90F14A84D8CEAD5026 /* Pods_Super_Marvel_Super_MarvelUITests.framework */,
-				B4AB74635C49A07030C3F9CE /* Pods_Super_MarvelTests.framework */,
+				192AFA2A913943C4EB4C3B8E /* Pods_SuperMarvel.framework */,
+				E4095B300CF441334CA22A0F /* Pods_SuperMarvel_SuperMarvelUITests.framework */,
+				E767412EEB5CB6381CF208B1 /* Pods_SuperMarvelTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2D7DFEA2A881A1D00E7BA04 /* Super-Marvel */ = {
+		A2D7DFEA2A881A1D00E7BA04 /* SuperMarvel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2D7E0152A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "Super-Marvel" */;
+			buildConfigurationList = A2D7E0152A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "SuperMarvel" */;
 			buildPhases = (
 				C08E82EBAA878C4D8256C187 /* [CP] Check Pods Manifest.lock */,
 				A2D7DFE72A881A1D00E7BA04 /* Sources */,
@@ -175,14 +187,14 @@
 			);
 			dependencies = (
 			);
-			name = "Super-Marvel";
+			name = SuperMarvel;
 			productName = "Super-Marvel";
-			productReference = A2D7DFEB2A881A1D00E7BA04 /* Super-Marvel.app */;
+			productReference = A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2D7E0002A881A2100E7BA04 /* Super-MarvelTests */ = {
+		A2D7E0002A881A2100E7BA04 /* SuperMarvelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2D7E0182A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "Super-MarvelTests" */;
+			buildConfigurationList = A2D7E0182A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "SuperMarvelTests" */;
 			buildPhases = (
 				5DB42F47DA22A25DB80A5D8B /* [CP] Check Pods Manifest.lock */,
 				A2D7DFFD2A881A2100E7BA04 /* Sources */,
@@ -194,14 +206,14 @@
 			dependencies = (
 				A2D7E0032A881A2100E7BA04 /* PBXTargetDependency */,
 			);
-			name = "Super-MarvelTests";
+			name = SuperMarvelTests;
 			productName = "Super-MarvelTests";
-			productReference = A2D7E0012A881A2100E7BA04 /* Super-MarvelTests.xctest */;
+			productReference = A2D7E0012A881A2100E7BA04 /* SuperMarvelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A2D7E00A2A881A2100E7BA04 /* Super-MarvelUITests */ = {
+		A2D7E00A2A881A2100E7BA04 /* SuperMarvelUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2D7E01B2A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "Super-MarvelUITests" */;
+			buildConfigurationList = A2D7E01B2A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "SuperMarvelUITests" */;
 			buildPhases = (
 				C611C9B36C248A0E05DC3D9D /* [CP] Check Pods Manifest.lock */,
 				A2D7E0072A881A2100E7BA04 /* Sources */,
@@ -213,9 +225,9 @@
 			dependencies = (
 				A2D7E00D2A881A2100E7BA04 /* PBXTargetDependency */,
 			);
-			name = "Super-MarvelUITests";
+			name = SuperMarvelUITests;
 			productName = "Super-MarvelUITests";
-			productReference = A2D7E00B2A881A2100E7BA04 /* Super-MarvelUITests.xctest */;
+			productReference = A2D7E00B2A881A2100E7BA04 /* SuperMarvelUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A2D7DFE62A881A1D00E7BA04 /* Build configuration list for PBXProject "Super-Marvel" */;
+			buildConfigurationList = A2D7DFE62A881A1D00E7BA04 /* Build configuration list for PBXProject "SuperMarvel" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -254,9 +266,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2D7DFEA2A881A1D00E7BA04 /* Super-Marvel */,
-				A2D7E0002A881A2100E7BA04 /* Super-MarvelTests */,
-				A2D7E00A2A881A2100E7BA04 /* Super-MarvelUITests */,
+				A2D7DFEA2A881A1D00E7BA04 /* SuperMarvel */,
+				A2D7E0002A881A2100E7BA04 /* SuperMarvelTests */,
+				A2D7E00A2A881A2100E7BA04 /* SuperMarvelUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,7 +315,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Super-MarvelTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SuperMarvelTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,7 +355,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Super-Marvel-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SuperMarvel-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,7 +377,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Super-Marvel-Super-MarvelUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SuperMarvel-SuperMarvelUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -387,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2D7E0062A881A2100E7BA04 /* Super_MarvelTests.swift in Sources */,
+				A2D7E0062A881A2100E7BA04 /* SuperMarvelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2D7E0102A881A2100E7BA04 /* Super_MarvelUITests.swift in Sources */,
-				A2D7E0122A881A2100E7BA04 /* Super_MarvelUITestsLaunchTests.swift in Sources */,
+				A2D7E0102A881A2100E7BA04 /* SuperMarvelUITests.swift in Sources */,
+				A2D7E0122A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,12 +417,12 @@
 /* Begin PBXTargetDependency section */
 		A2D7E0032A881A2100E7BA04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2D7DFEA2A881A1D00E7BA04 /* Super-Marvel */;
+			target = A2D7DFEA2A881A1D00E7BA04 /* SuperMarvel */;
 			targetProxy = A2D7E0022A881A2100E7BA04 /* PBXContainerItemProxy */;
 		};
 		A2D7E00D2A881A2100E7BA04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2D7DFEA2A881A1D00E7BA04 /* Super-Marvel */;
+			target = A2D7DFEA2A881A1D00E7BA04 /* SuperMarvel */;
 			targetProxy = A2D7E00C2A881A2100E7BA04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -543,7 +555,7 @@
 		};
 		A2D7E0162A881A2100E7BA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 523E85AE1020D966AA389C35 /* Pods-Super-Marvel.debug.xcconfig */;
+			baseConfigurationReference = BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -551,13 +563,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Super-Marvel/Info.plist";
+				INFOPLIST_FILE = SuperMarvel/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Marvel;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,7 +587,7 @@
 		};
 		A2D7E0172A881A2100E7BA04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C6C49B7FF61752DA7C527AB /* Pods-Super-Marvel.release.xcconfig */;
+			baseConfigurationReference = 9416A8967997C4ED2D40C2D8 /* Pods-SuperMarvel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,13 +595,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Super-Marvel/Info.plist";
+				INFOPLIST_FILE = SuperMarvel/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Marvel;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,7 +619,7 @@
 		};
 		A2D7E0192A881A2100E7BA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DBB8CA1A59C2ECA73126DF0 /* Pods-Super-MarvelTests.debug.xcconfig */;
+			baseConfigurationReference = 7FBAEF6BCE2692D6E64879E2 /* Pods-SuperMarvelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,18 +629,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.ioslam.Super-MarvelTests";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Super-Marvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Super-Marvel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMarvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuperMarvel";
 			};
 			name = Debug;
 		};
 		A2D7E01A2A881A2100E7BA04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E1DF326656747FDD6876A3F /* Pods-Super-MarvelTests.release.xcconfig */;
+			baseConfigurationReference = B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,18 +650,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.ioslam.Super-MarvelTests";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Super-Marvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Super-Marvel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMarvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuperMarvel";
 			};
 			name = Release;
 		};
 		A2D7E01C2A881A2100E7BA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3D0C208AF4300806F20F9F9 /* Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig */;
+			baseConfigurationReference = E95216DCD13E60D1B78EA699 /* Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,7 +669,7 @@
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.ioslam.Super-MarvelUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -666,7 +680,7 @@
 		};
 		A2D7E01D2A881A2100E7BA04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D26075D346C515780F73A24 /* Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig */;
+			baseConfigurationReference = A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,7 +688,7 @@
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.ioslam.Super-MarvelUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -686,7 +700,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2D7DFE62A881A1D00E7BA04 /* Build configuration list for PBXProject "Super-Marvel" */ = {
+		A2D7DFE62A881A1D00E7BA04 /* Build configuration list for PBXProject "SuperMarvel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E0132A881A2100E7BA04 /* Debug */,
@@ -695,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2D7E0152A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "Super-Marvel" */ = {
+		A2D7E0152A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "SuperMarvel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E0162A881A2100E7BA04 /* Debug */,
@@ -704,7 +718,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2D7E0182A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "Super-MarvelTests" */ = {
+		A2D7E0182A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "SuperMarvelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E0192A881A2100E7BA04 /* Debug */,
@@ -713,7 +727,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2D7E01B2A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "Super-MarvelUITests" */ = {
+		A2D7E01B2A881A2100E7BA04 /* Build configuration list for PBXNativeTarget "SuperMarvelUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E01C2A881A2100E7BA04 /* Debug */,

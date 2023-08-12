@@ -2,20 +2,20 @@
 source 'https://github.com/cocoaPods/Specs.git'
 platform :ios, '13.0'
 
-target 'Super-Marvel' do
+target 'SuperMarvel' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Super-Marvel
 
-  target 'Super-MarvelTests' do
+  target 'SuperMarvelTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'SwiftLint'
     pod 'SwiftGen', '~> 6.0'
   end
 
-  target 'Super-MarvelUITests' do
+  target 'SuperMarvelUITests' do
     # Pods for testing
   end
 
