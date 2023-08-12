@@ -1,0 +1,71 @@
+disabled_rules:
+    - trailing_whitespace
+    - trailing_semicolon
+    - sorted_imports
+    - control_statement
+    - no_space_in_method_call
+    - multiple_closures_with_trailing_closure
+    - vertical_whitespace_closing_braces
+    - cyclomatic_complexity
+    - implicit_getter
+    - private_outlet
+    - function_body_length
+    - function_parameter_count
+    - implicit_return
+    - line_length
+    - first_where
+    - unused_optional_binding
+    - empty_enum_arguments
+    - vertical_parameter_alignment
+    - for_where
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+    - Carthage
+    - Pods
+    - Source/ExcludedFolder
+    - Source/ExcludedFile.swift
+    - Source/*/ExcludedFile.swift # Exclude files with a wildcards
+    - .build
+
+opt_in_rules:
+    - empty_count
+    - explicit_init
+    - closure_spacing
+    - overridden_super_call
+    - redundant_nil_coalescing
+    - private_outlet
+    - nimble_operator
+    - attributes
+    - operator_usage_whitespace
+    - first_where
+    - sorted_imports
+    - object_literal
+    - prohibited_super_call
+    - fatal_error_message
+
+force_cast: warning
+force_try: error
+force_unwrapping: warning
+
+legacy_constant: warning
+vertical_parameter_alignment_on_call: warning
+multiline_parameters: warning
+notification_center_detachment: warning
+legacy_constant: warning
+
+empty_count:
+    severity: warning
+
+number_separator: warning
+
+identifier_name:
+    allowed_symbols: _
+    validates_start_with_lowercase: false
+    min_length: 2
+    max_length:
+        warning: 40
+        error: 60
+
+line_length:
+    ignores_comments: true
+    warning: 150
