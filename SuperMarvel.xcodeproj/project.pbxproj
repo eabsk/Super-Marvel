@@ -16,6 +16,15 @@
 		A2D7E0062A881A2100E7BA04 /* SuperMarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0052A881A2100E7BA04 /* SuperMarvelTests.swift */; };
 		A2D7E0102A881A2100E7BA04 /* SuperMarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E00F2A881A2100E7BA04 /* SuperMarvelUITests.swift */; };
 		A2D7E0122A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0112A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift */; };
+		A2D7E0232A884BC500E7BA04 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7E0222A884BC500E7BA04 /* ColorAssets.xcassets */; };
+		A2D7E0272A884C6500E7BA04 /* NetworkErrorStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2D7E0292A884C6500E7BA04 /* NetworkErrorStrings.strings */; };
+		A2D7E02B2A884F1100E7BA04 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E02A2A884F1000E7BA04 /* Assets.swift */; };
+		A2D7E02D2A884F1D00E7BA04 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E02C2A884F1D00E7BA04 /* Strings.swift */; };
+		A2D7E02F2A884FA300E7BA04 /* AppBundles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E02E2A884FA300E7BA04 /* AppBundles.swift */; };
+		A2D7E0312A88564400E7BA04 /* LocalizeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0302A88564400E7BA04 /* LocalizeService.swift */; };
+		A2D7E0332A8856B600E7BA04 /* UserDefaultsWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0322A8856B600E7BA04 /* UserDefaultsWrappers.swift */; };
+		A2D7E0352A88572800E7BA04 /* Bundle+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0342A88572800E7BA04 /* Bundle+ Ex.swift */; };
+		A2D7E0372A88578100E7BA04 /* AppObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0362A88578100E7BA04 /* AppObservers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +63,15 @@
 		A2D7E00B2A881A2100E7BA04 /* SuperMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7E00F2A881A2100E7BA04 /* SuperMarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarvelUITests.swift; sourceTree = "<group>"; };
 		A2D7E0112A881A2100E7BA04 /* SuperMarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2D7E0222A884BC500E7BA04 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		A2D7E0282A884C6500E7BA04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NetworkErrorStrings.strings; sourceTree = "<group>"; };
+		A2D7E02A2A884F1000E7BA04 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		A2D7E02C2A884F1D00E7BA04 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A2D7E02E2A884FA300E7BA04 /* AppBundles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBundles.swift; sourceTree = "<group>"; };
+		A2D7E0302A88564400E7BA04 /* LocalizeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeService.swift; sourceTree = "<group>"; };
+		A2D7E0322A8856B600E7BA04 /* UserDefaultsWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrappers.swift; sourceTree = "<group>"; };
+		A2D7E0342A88572800E7BA04 /* Bundle+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+ Ex.swift"; sourceTree = "<group>"; };
+		A2D7E0362A88578100E7BA04 /* AppObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppObservers.swift; sourceTree = "<group>"; };
 		A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,8 +153,14 @@
 		A2D7DFED2A881A1D00E7BA04 /* SuperMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				A2D7E0242A884C0C00E7BA04 /* Localize */,
+				A2D7E0212A884B7700E7BA04 /* Assets */,
 				A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */,
-				A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */,
+				A2D7E02E2A884FA300E7BA04 /* AppBundles.swift */,
+				A2D7E0342A88572800E7BA04 /* Bundle+ Ex.swift */,
+				A2D7E0302A88564400E7BA04 /* LocalizeService.swift */,
+				A2D7E0362A88578100E7BA04 /* AppObservers.swift */,
+				A2D7E0322A8856B600E7BA04 /* UserDefaultsWrappers.swift */,
 				A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */,
 				A2D7DFFC2A881A2000E7BA04 /* Info.plist */,
 			);
@@ -160,6 +184,25 @@
 			path = SuperMarvelUITests;
 			sourceTree = "<group>";
 		};
+		A2D7E0212A884B7700E7BA04 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A2D7E02A2A884F1000E7BA04 /* Assets.swift */,
+				A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */,
+				A2D7E0222A884BC500E7BA04 /* ColorAssets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A2D7E0242A884C0C00E7BA04 /* Localize */ = {
+			isa = PBXGroup;
+			children = (
+				A2D7E02C2A884F1D00E7BA04 /* Strings.swift */,
+				A2D7E0292A884C6500E7BA04 /* NetworkErrorStrings.strings */,
+			);
+			path = Localize;
+			sourceTree = "<group>";
+		};
 		F411BBFF39C2D5A40CA23EB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +223,7 @@
 				C08E82EBAA878C4D8256C187 /* [CP] Check Pods Manifest.lock */,
 				A2D7DFE72A881A1D00E7BA04 /* Sources */,
 				A2D7E01E2A8836CC00E7BA04 /* Run SwiftLint Script */,
+				A2D7E0202A884AB900E7BA04 /* Run SwiftGen Script */,
 				A2D7DFE82A881A1D00E7BA04 /* Frameworks */,
 				A2D7DFE92A881A1D00E7BA04 /* Resources */,
 			);
@@ -279,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */,
+				A2D7E0272A884C6500E7BA04 /* NetworkErrorStrings.strings in Resources */,
+				A2D7E0232A884BC500E7BA04 /* ColorAssets.xcassets in Resources */,
 				A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +387,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		A2D7E0202A884AB900E7BA04 /* Run SwiftGen Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		C08E82EBAA878C4D8256C187 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,7 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D7E02B2A884F1100E7BA04 /* Assets.swift in Sources */,
+				A2D7E0372A88578100E7BA04 /* AppObservers.swift in Sources */,
+				A2D7E02F2A884FA300E7BA04 /* AppBundles.swift in Sources */,
+				A2D7E0352A88572800E7BA04 /* Bundle+ Ex.swift in Sources */,
+				A2D7E02D2A884F1D00E7BA04 /* Strings.swift in Sources */,
 				A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */,
+				A2D7E0332A8856B600E7BA04 /* UserDefaultsWrappers.swift in Sources */,
+				A2D7E0312A88564400E7BA04 /* LocalizeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +507,14 @@
 				A2D7DFFA2A881A2000E7BA04 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A2D7E0292A884C6500E7BA04 /* NetworkErrorStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D7E0282A884C6500E7BA04 /* en */,
+			);
+			name = NetworkErrorStrings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -578,7 +658,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -610,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -630,7 +710,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -651,7 +731,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -670,7 +750,7 @@
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -689,7 +769,7 @@
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ios.ioslam.SuperMarvelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
