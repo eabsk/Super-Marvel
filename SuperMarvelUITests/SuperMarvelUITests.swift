@@ -1,13 +1,6 @@
-//
-//  Super_MarvelUITests.swift
-//  Super-MarvelUITests
-//
-//  Created by Eslam Abdelmaqsoud on 12/08/2023.
-//
-
 import XCTest
 
-final class Super_MarvelUITests: XCTestCase {
+final class SuperMarvelUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

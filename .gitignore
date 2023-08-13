@@ -37,3 +37,9 @@ iOSInjectionProject/
 .DS_Store
 
 Gemfile.lock
+
+Super-Marvel.xcworkspace/xcshareddata/
+
+*.xcworkspacedata
+
+SuperMarvel.xcworkspace/xcshareddata/
