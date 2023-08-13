@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setRootViewController() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.cyan
+        self.window?.backgroundColor = .systemBackground
         let vc = UIViewController()
         vc.view.backgroundColor = .systemBackground
         self.window?.rootViewController = UINavigationController(rootViewController: vc)
