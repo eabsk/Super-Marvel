@@ -1,13 +1,6 @@
-//
-//  Super_MarvelUITestsLaunchTests.swift
-//  Super-MarvelUITests
-//
-//  Created by Eslam Abdelmaqsoud on 12/08/2023.
-//
-
 import XCTest
 
-final class Super_MarvelUITestsLaunchTests: XCTestCase {
+final class SuperMarvelUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
