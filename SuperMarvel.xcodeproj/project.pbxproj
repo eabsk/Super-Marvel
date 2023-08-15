@@ -30,6 +30,7 @@
 		A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FB5902A8C3E580085F188 /* SplashViewController.xib */; };
 		A27FB5972A8C3E580085F188 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5922A8C3E580085F188 /* SplashViewModel.swift */; };
 		A27FB5982A8C3E580085F188 /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5942A8C3E580085F188 /* SplashFactory.swift */; };
+		A27FB59A2A8C402C0085F188 /* MarvelBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
 		A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */; };
@@ -91,6 +92,7 @@
 		A27FB5902A8C3E580085F188 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		A27FB5922A8C3E580085F188 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		A27FB5942A8C3E580085F188 /* SplashFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
+		A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBaseViewController.swift; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				A27FB5792A8C32F90085F188 /* BaseCoordinator.swift */,
 				A27FB5802A8C356C0085F188 /* BaseNavigationController.swift */,
+				A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				A27FB5852A8C38FD0085F188 /* MainCoordinator+ Ex.swift in Sources */,
 				A2D7E0312A88564400E7BA04 /* LocalizeService.swift in Sources */,
 				A27FB5832A8C37680085F188 /* UIViewController+ Ex .swift in Sources */,
+				A27FB59A2A8C402C0085F188 /* MarvelBaseViewController.swift in Sources */,
 				A27FB5812A8C356C0085F188 /* BaseNavigationController.swift in Sources */,
 				A27FB56E2A8C1F560085F188 /* CharacterRequest.swift in Sources */,
 			);

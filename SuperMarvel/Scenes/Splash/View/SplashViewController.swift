@@ -11,7 +11,7 @@ protocol SplashCoordinatorProtocol {
 
 }
 
-class SplashViewController: UIViewController {
+class SplashViewController: MarvelBaseViewController {
     
     // MARK: - Properties
 
@@ -20,14 +20,15 @@ class SplashViewController: UIViewController {
     var coordinator: SplashCoordinatorProtocol!
 
     // MARK: - View LifeCycle
-    
-    override func viewWillAppear(_ animated: Bool) {
-       super.viewWillAppear(true)
-    }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+       super.viewDidAppear(true)
+        
     }
 
 }
