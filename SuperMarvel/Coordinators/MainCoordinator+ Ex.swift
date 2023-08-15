@@ -7,13 +7,12 @@
 
 import UIKit
 
-// MARK: - Main App + Splash
-extension MainCoordinator {
+// MARK: - Splash As Root
+extension MainCoordinator: SplashCoordinatorProtocol {
     
     func setSplashAsRoot() {
         initConfigurations()
-        let vc = UIViewController()
-        vc.view.backgroundColor = .orange
+        let vc = container.resolveSplashController(coordinator: self)
         UIApplication.shared.restartTo(vc, animated: true)
     }
 }
