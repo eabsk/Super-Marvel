@@ -7,12 +7,19 @@ target 'SuperMarvel' do
   use_frameworks!
 
   # Pods for SuperMarvel
-
+  # Utilities
+  pod 'SwiftLint'
+  pod 'SwiftGen', '~> 6.0'
+  pod 'NVActivityIndicatorView'
+  
+  # Networking
+  pod 'Moya', '~> 15.0'
+  pod 'Kingfisher', '~> 7.0'
+  
   target 'SuperMarvelTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'SwiftLint'
-    pod 'SwiftGen', '~> 6.0'
+    
   end
 
   target 'SuperMarvelUITests' do
