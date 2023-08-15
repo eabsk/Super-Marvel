@@ -50,13 +50,8 @@
 
 /* Begin PBXFileReference section */
 		192AFA2A913943C4EB4C3B8E /* Pods_SuperMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C6C49B7FF61752DA7C527AB /* Pods-Super-Marvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel.release.xcconfig"; path = "Target Support Files/Pods-Super-Marvel/Pods-Super-Marvel.release.xcconfig"; sourceTree = "<group>"; };
-		523E85AE1020D966AA389C35 /* Pods-Super-Marvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel.debug.xcconfig"; path = "Target Support Files/Pods-Super-Marvel/Pods-Super-Marvel.debug.xcconfig"; sourceTree = "<group>"; };
-		5DBB8CA1A59C2ECA73126DF0 /* Pods-Super-MarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-MarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-Super-MarvelTests/Pods-Super-MarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FBAEF6BCE2692D6E64879E2 /* Pods-SuperMarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8E1DF326656747FDD6876A3F /* Pods-Super-MarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-MarvelTests.release.xcconfig"; path = "Target Support Files/Pods-Super-MarvelTests/Pods-Super-MarvelTests.release.xcconfig"; sourceTree = "<group>"; };
 		9416A8967997C4ED2D40C2D8 /* Pods-SuperMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.release.xcconfig"; sourceTree = "<group>"; };
-		9D26075D346C515780F73A24 /* Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-Super-Marvel-Super-MarvelUITests/Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A27FB5592A8B83250085F188 /* UrlPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPaths.swift; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +78,6 @@
 		A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.debug.xcconfig"; sourceTree = "<group>"; };
-		E3D0C208AF4300806F20F9F9 /* Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig"; path = "Target Support Files/Pods-Super-Marvel-Super-MarvelUITests/Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4095B300CF441334CA22A0F /* Pods_SuperMarvel_SuperMarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvel_SuperMarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E767412EEB5CB6381CF208B1 /* Pods_SuperMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95216DCD13E60D1B78EA699 /* Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,12 +114,6 @@
 		19508B2368EF4FAAD97B92DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				523E85AE1020D966AA389C35 /* Pods-Super-Marvel.debug.xcconfig */,
-				2C6C49B7FF61752DA7C527AB /* Pods-Super-Marvel.release.xcconfig */,
-				E3D0C208AF4300806F20F9F9 /* Pods-Super-Marvel-Super-MarvelUITests.debug.xcconfig */,
-				9D26075D346C515780F73A24 /* Pods-Super-Marvel-Super-MarvelUITests.release.xcconfig */,
-				5DBB8CA1A59C2ECA73126DF0 /* Pods-Super-MarvelTests.debug.xcconfig */,
-				8E1DF326656747FDD6876A3F /* Pods-Super-MarvelTests.release.xcconfig */,
 				BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */,
 				9416A8967997C4ED2D40C2D8 /* Pods-SuperMarvel.release.xcconfig */,
 				E95216DCD13E60D1B78EA699 /* Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig */,
