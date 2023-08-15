@@ -1,7 +1,12 @@
 import Foundation
 
-public struct BaseResponseModel<T: Codable>: Codable {
+struct BaseResponseModel<T: Codable>: Codable {
     let code: Int?
     let status: String?
-    let data: T?
+    let data: ResponseDataModel<T>?
+}
+
+struct ResponseDataModel<T: Codable>: Codable {
+    let offset, limit, total, count: Int?
+    let results: [T]?
 }

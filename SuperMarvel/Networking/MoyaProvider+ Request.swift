@@ -3,7 +3,7 @@ import Combine
 
 extension MoyaProvider {
     
-    func requestPromise<T: Codable> (_ target: Target) -> Future<T, ServerError> {
+    func request<T: Codable> (_ target: Target) -> Future<T, ServerError> {
         
         return Future<T, ServerError> { promise in
             
