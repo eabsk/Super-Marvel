@@ -19,6 +19,18 @@
 		A27FB56E2A8C1F560085F188 /* CharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB56D2A8C1F560085F188 /* CharacterRequest.swift */; };
 		A27FB5702A8C1F6F0085F188 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB56F2A8C1F6F0085F188 /* BaseRequest.swift */; };
 		A27FB5732A8C214A0085F188 /* CharacterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5722A8C214A0085F188 /* CharacterDTO.swift */; };
+		A27FB5762A8C2C810085F188 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5752A8C2C810085F188 /* AppCoordinator.swift */; };
+		A27FB5782A8C32990085F188 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5772A8C32990085F188 /* MainCoordinator.swift */; };
+		A27FB57A2A8C32F90085F188 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5792A8C32F90085F188 /* BaseCoordinator.swift */; };
+		A27FB57E2A8C34E70085F188 /* UIApplication+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB57D2A8C34E70085F188 /* UIApplication+ Ex.swift */; };
+		A27FB5812A8C356C0085F188 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5802A8C356C0085F188 /* BaseNavigationController.swift */; };
+		A27FB5832A8C37680085F188 /* UIViewController+ Ex .swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5822A8C37680085F188 /* UIViewController+ Ex .swift */; };
+		A27FB5852A8C38FD0085F188 /* MainCoordinator+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5842A8C38FD0085F188 /* MainCoordinator+ Ex.swift */; };
+		A27FB5952A8C3E580085F188 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB58F2A8C3E580085F188 /* SplashViewController.swift */; };
+		A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FB5902A8C3E580085F188 /* SplashViewController.xib */; };
+		A27FB5972A8C3E580085F188 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5922A8C3E580085F188 /* SplashViewModel.swift */; };
+		A27FB5982A8C3E580085F188 /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5942A8C3E580085F188 /* SplashFactory.swift */; };
+		A27FB59A2A8C402C0085F188 /* MarvelBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
 		A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */; };
@@ -69,6 +81,18 @@
 		A27FB56D2A8C1F560085F188 /* CharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRequest.swift; sourceTree = "<group>"; };
 		A27FB56F2A8C1F6F0085F188 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		A27FB5722A8C214A0085F188 /* CharacterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDTO.swift; sourceTree = "<group>"; };
+		A27FB5752A8C2C810085F188 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A27FB5772A8C32990085F188 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A27FB5792A8C32F90085F188 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		A27FB57D2A8C34E70085F188 /* UIApplication+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+ Ex.swift"; sourceTree = "<group>"; };
+		A27FB5802A8C356C0085F188 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A27FB5822A8C37680085F188 /* UIViewController+ Ex .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ Ex .swift"; sourceTree = "<group>"; };
+		A27FB5842A8C38FD0085F188 /* MainCoordinator+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+ Ex.swift"; sourceTree = "<group>"; };
+		A27FB58F2A8C3E580085F188 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A27FB5902A8C3E580085F188 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		A27FB5922A8C3E580085F188 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		A27FB5942A8C3E580085F188 /* SplashFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
+		A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBaseViewController.swift; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +209,70 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		A27FB5742A8C2C6B0085F188 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB57F2A8C35200085F188 /* Base */,
+				A27FB5752A8C2C810085F188 /* AppCoordinator.swift */,
+				A27FB5772A8C32990085F188 /* MainCoordinator.swift */,
+				A27FB5842A8C38FD0085F188 /* MainCoordinator+ Ex.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A27FB57F2A8C35200085F188 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5792A8C32F90085F188 /* BaseCoordinator.swift */,
+				A27FB5802A8C356C0085F188 /* BaseNavigationController.swift */,
+				A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A27FB5862A8C3DDE0085F188 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5872A8C3E3C0085F188 /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A27FB5872A8C3E3C0085F188 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5932A8C3E580085F188 /* Factory */,
+				A27FB58E2A8C3E580085F188 /* View */,
+				A27FB5912A8C3E580085F188 /* ViewModel */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A27FB58E2A8C3E580085F188 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB58F2A8C3E580085F188 /* SplashViewController.swift */,
+				A27FB5902A8C3E580085F188 /* SplashViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A27FB5912A8C3E580085F188 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5922A8C3E580085F188 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A27FB5932A8C3E580085F188 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5942A8C3E580085F188 /* SplashFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		A2D7DFE22A881A1D00E7BA04 = {
 			isa = PBXGroup;
 			children = (
@@ -210,12 +298,14 @@
 		A2D7DFED2A881A1D00E7BA04 /* SuperMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				A2D7E0552A88650E00E7BA04 /* Core */,
 				A27FB55B2A8C118F0085F188 /* DataModels */,
 				A27FB5582A8B829B0085F188 /* Networking */,
 				A27FB5692A8C18DF0085F188 /* APIs */,
 				A27FB56C2A8C1F3A0085F188 /* Requests */,
-				A2D7E0552A88650E00E7BA04 /* Core */,
 				A2D7E0562A88652100E7BA04 /* Base */,
+				A27FB5742A8C2C6B0085F188 /* Coordinators */,
+				A27FB5862A8C3DDE0085F188 /* Scenes */,
 				A2D7E0542A8864F400E7BA04 /* Extensions */,
 				A2D7E0242A884C0C00E7BA04 /* Localize */,
 				A2D7E0212A884B7700E7BA04 /* Assets */,
@@ -265,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				A2D7E0342A88572800E7BA04 /* Bundle+ Ex.swift */,
+				A27FB57D2A8C34E70085F188 /* UIApplication+ Ex.swift */,
+				A27FB5822A8C37680085F188 /* UIViewController+ Ex .swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */,
+				A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */,
 				A2D7E0272A884C6500E7BA04 /* NetworkErrorStrings.strings in Resources */,
 				A2D7E0232A884BC500E7BA04 /* ColorAssets.xcassets in Resources */,
 				A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */,
@@ -634,7 +727,10 @@
 				A2D7E02B2A884F1100E7BA04 /* Assets.swift in Sources */,
 				A27FB5702A8C1F6F0085F188 /* BaseRequest.swift in Sources */,
 				A2D7E0372A88578100E7BA04 /* AppObservers.swift in Sources */,
+				A27FB5782A8C32990085F188 /* MainCoordinator.swift in Sources */,
 				A27FB5732A8C214A0085F188 /* CharacterDTO.swift in Sources */,
+				A27FB5982A8C3E580085F188 /* SplashFactory.swift in Sources */,
+				A27FB5762A8C2C810085F188 /* AppCoordinator.swift in Sources */,
 				A27FB5632A8C14F90085F188 /* ServerErrorResponse.swift in Sources */,
 				A2D7E02F2A884FA300E7BA04 /* AppBundles.swift in Sources */,
 				A2D7E0622A886B0100E7BA04 /* DelegateAlias.swift in Sources */,
@@ -643,11 +739,19 @@
 				A27FB56B2A8C18F00085F188 /* CharacterAPI.swift in Sources */,
 				A2D7E02D2A884F1D00E7BA04 /* Strings.swift in Sources */,
 				A27FB5612A8C14A00085F188 /* MoyaProvider+ Request.swift in Sources */,
+				A27FB57A2A8C32F90085F188 /* BaseCoordinator.swift in Sources */,
 				A2D7E05F2A88698E00E7BA04 /* URLs.swift in Sources */,
 				A2D7E05D2A8866A200E7BA04 /* Configurations.swift in Sources */,
+				A27FB5952A8C3E580085F188 /* SplashViewController.swift in Sources */,
+				A27FB5972A8C3E580085F188 /* SplashViewModel.swift in Sources */,
 				A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */,
+				A27FB57E2A8C34E70085F188 /* UIApplication+ Ex.swift in Sources */,
 				A2D7E0332A8856B600E7BA04 /* UserDefaultsWrappers.swift in Sources */,
+				A27FB5852A8C38FD0085F188 /* MainCoordinator+ Ex.swift in Sources */,
 				A2D7E0312A88564400E7BA04 /* LocalizeService.swift in Sources */,
+				A27FB5832A8C37680085F188 /* UIViewController+ Ex .swift in Sources */,
+				A27FB59A2A8C402C0085F188 /* MarvelBaseViewController.swift in Sources */,
+				A27FB5812A8C356C0085F188 /* BaseNavigationController.swift in Sources */,
 				A27FB56E2A8C1F560085F188 /* CharacterRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
