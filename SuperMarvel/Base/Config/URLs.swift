@@ -11,5 +11,5 @@ struct URLs {
 #endif
     }
     
-    static let baseURL = URLs.plainDomain + "/v1/public/"
+    static let baseURL = URLs.plainDomain + "/v1/public"
 }
