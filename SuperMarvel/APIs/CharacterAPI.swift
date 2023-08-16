@@ -9,7 +9,6 @@ extension CharacterAPI: TargetType {
     var path: String {
         switch self {
         case .getCharacters: return UrlPath.characters.rawValue
-       
         }
     }
     
@@ -19,24 +18,17 @@ extension CharacterAPI: TargetType {
         }
     }
     
-    var parameters: [String: Any]? {
-        switch self {
-        case  .getCharacters:
-            return [:]
-        }
-    }
-    
     var parameterEncoding: ParameterEncoding {
         switch self {
         case .getCharacters: return URLEncoding.queryString
         }
     }
     
-        var task: Task {
-            if let parameters {
-                return .requestParameters(parameters: parameters, encoding: parameterEncoding)
-            } else {
-                return .requestPlain
-            }
+    var task: Task {
+        if let parameters {
+            return .requestParameters(parameters: parameters, encoding: parameterEncoding)
+        } else {
+            return .requestPlain
         }
+    }
 }

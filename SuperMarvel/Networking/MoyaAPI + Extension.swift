@@ -22,9 +22,7 @@ extension TargetType {
     
     var parameters: [String: Any]? {
         [
-            "apikey": "",
-            "ts": "1691528326",
-            "hash": ""
+            :
         ]
     }
     

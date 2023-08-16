@@ -1,10 +1,3 @@
-//
-//  MainCoordinator+ Ex.swift
-//  SuperMarvel
-//
-//  Created by Eslam Abdelmaqsoud on 16/08/2023.
-//
-
 import UIKit
 
 // MARK: - Splash As Root
@@ -15,4 +8,15 @@ extension MainCoordinator: SplashCoordinatorProtocol {
         let vc = container.resolveSplashController(coordinator: self)
         UIApplication.shared.restartTo(vc, animated: true)
     }
+}
+
+// MARK: - load Characters View
+extension MainCoordinator: CharactersCoordinatorProtocol {
+    
+    func loadCharactersView() {
+        let vc = container.resolveCharactersController(coordinator: self)
+        navigationController = BaseNavigationController(rootViewController: vc)
+        UIApplication.shared.restartTo(navigationController, animated: true)
+    }
+    
 }
