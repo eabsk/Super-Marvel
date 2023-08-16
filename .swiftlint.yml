@@ -15,7 +15,6 @@ disabled_rules:
     - first_where
     - unused_optional_binding
     - empty_enum_arguments
-    - vertical_parameter_alignment
     - for_where
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
@@ -43,14 +42,12 @@ opt_in_rules:
     - fatal_error_message
     - force_unwrapping
     - number_separator
-    - vertical_parameter_alignment_on_call
 
 force_cast: warning
 force_try: error
 force_unwrapping: warning
 
 legacy_constant: warning
-vertical_parameter_alignment_on_call: warning
 notification_center_detachment: warning
 legacy_constant: warning
 
