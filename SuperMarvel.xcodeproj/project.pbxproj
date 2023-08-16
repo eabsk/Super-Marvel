@@ -30,7 +30,13 @@
 		A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FB5902A8C3E580085F188 /* SplashViewController.xib */; };
 		A27FB5972A8C3E580085F188 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5922A8C3E580085F188 /* SplashViewModel.swift */; };
 		A27FB5982A8C3E580085F188 /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5942A8C3E580085F188 /* SplashFactory.swift */; };
-		A27FB59A2A8C402C0085F188 /* MarvelBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */; };
+		A27FB5A02A8D007C0085F188 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB59F2A8D007C0085F188 /* CharacterRepository.swift */; };
+		A27FB5B42A8D02240085F188 /* CharactersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5AE2A8D02240085F188 /* CharactersFactory.swift */; };
+		A27FB5B52A8D02240085F188 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5B02A8D02240085F188 /* CharactersViewModel.swift */; };
+		A27FB5B62A8D02240085F188 /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FB5B22A8D02240085F188 /* CharactersViewController.xib */; };
+		A27FB5B72A8D02240085F188 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5B32A8D02240085F188 /* CharactersViewController.swift */; };
+		A27FB5BA2A8D6E840085F188 /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5B92A8D6E840085F188 /* CharacterMapper.swift */; };
+		A27FB5BC2A8D6F920085F188 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5BB2A8D6F920085F188 /* CharacterModel.swift */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
 		A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */; };
@@ -92,7 +98,13 @@
 		A27FB5902A8C3E580085F188 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		A27FB5922A8C3E580085F188 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		A27FB5942A8C3E580085F188 /* SplashFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
-		A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBaseViewController.swift; sourceTree = "<group>"; };
+		A27FB59F2A8D007C0085F188 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		A27FB5AE2A8D02240085F188 /* CharactersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersFactory.swift; sourceTree = "<group>"; };
+		A27FB5B02A8D02240085F188 /* CharactersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		A27FB5B22A8D02240085F188 /* CharactersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
+		A27FB5B32A8D02240085F188 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		A27FB5B92A8D6E840085F188 /* CharacterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
+		A27FB5BB2A8D6F920085F188 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				A27FB5722A8C214A0085F188 /* CharacterDTO.swift */,
+				A27FB5BB2A8D6F920085F188 /* CharacterModel.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -225,7 +238,6 @@
 			children = (
 				A27FB5792A8C32F90085F188 /* BaseCoordinator.swift */,
 				A27FB5802A8C356C0085F188 /* BaseNavigationController.swift */,
-				A27FB5992A8C402C0085F188 /* MarvelBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -233,6 +245,7 @@
 		A27FB5862A8C3DDE0085F188 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A27FB5A42A8D02090085F188 /* Character */,
 				A27FB5872A8C3E3C0085F188 /* Splash */,
 			);
 			path = Scenes;
@@ -273,6 +286,73 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		A27FB59E2A8D002F0085F188 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB59F2A8D007C0085F188 /* CharacterRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A27FB5A42A8D02090085F188 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5A62A8D02090085F188 /* Characters */,
+				A27FB5A52A8D02090085F188 /* CharacterDetails */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		A27FB5A52A8D02090085F188 /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CharacterDetails;
+			sourceTree = "<group>";
+		};
+		A27FB5A62A8D02090085F188 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5AD2A8D02240085F188 /* Factory */,
+				A27FB5B12A8D02240085F188 /* View */,
+				A27FB5AF2A8D02240085F188 /* ViewModel */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		A27FB5AD2A8D02240085F188 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5AE2A8D02240085F188 /* CharactersFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		A27FB5AF2A8D02240085F188 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5B02A8D02240085F188 /* CharactersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A27FB5B12A8D02240085F188 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5B22A8D02240085F188 /* CharactersViewController.xib */,
+				A27FB5B32A8D02240085F188 /* CharactersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A27FB5B82A8D6E5F0085F188 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				A27FB5B92A8D6E840085F188 /* CharacterMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 		A2D7DFE22A881A1D00E7BA04 = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +383,8 @@
 				A27FB5582A8B829B0085F188 /* Networking */,
 				A27FB5692A8C18DF0085F188 /* APIs */,
 				A27FB56C2A8C1F3A0085F188 /* Requests */,
+				A27FB59E2A8D002F0085F188 /* Repositories */,
+				A27FB5B82A8D6E5F0085F188 /* Mappers */,
 				A2D7E0562A88652100E7BA04 /* Base */,
 				A27FB5742A8C2C6B0085F188 /* Coordinators */,
 				A27FB5862A8C3DDE0085F188 /* Scenes */,
@@ -552,6 +634,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27FB5B62A8D02240085F188 /* CharactersViewController.xib in Resources */,
 				A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */,
 				A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */,
 				A2D7E0272A884C6500E7BA04 /* NetworkErrorStrings.strings in Resources */,
@@ -723,9 +806,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27FB55F2A8C128B0085F188 /* MoyaAPI + Extension.swift in Sources */,
+				A27FB5A02A8D007C0085F188 /* CharacterRepository.swift in Sources */,
 				A27FB55D2A8C11A60085F188 /* BaseResponseModel.swift in Sources */,
 				A2D7E02B2A884F1100E7BA04 /* Assets.swift in Sources */,
+				A27FB5B42A8D02240085F188 /* CharactersFactory.swift in Sources */,
 				A27FB5702A8C1F6F0085F188 /* BaseRequest.swift in Sources */,
+				A27FB5B52A8D02240085F188 /* CharactersViewModel.swift in Sources */,
 				A2D7E0372A88578100E7BA04 /* AppObservers.swift in Sources */,
 				A27FB5782A8C32990085F188 /* MainCoordinator.swift in Sources */,
 				A27FB5732A8C214A0085F188 /* CharacterDTO.swift in Sources */,
@@ -747,10 +833,12 @@
 				A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */,
 				A27FB57E2A8C34E70085F188 /* UIApplication+ Ex.swift in Sources */,
 				A2D7E0332A8856B600E7BA04 /* UserDefaultsWrappers.swift in Sources */,
+				A27FB5B72A8D02240085F188 /* CharactersViewController.swift in Sources */,
 				A27FB5852A8C38FD0085F188 /* MainCoordinator+ Ex.swift in Sources */,
+				A27FB5BC2A8D6F920085F188 /* CharacterModel.swift in Sources */,
+				A27FB5BA2A8D6E840085F188 /* CharacterMapper.swift in Sources */,
 				A2D7E0312A88564400E7BA04 /* LocalizeService.swift in Sources */,
 				A27FB5832A8C37680085F188 /* UIViewController+ Ex .swift in Sources */,
-				A27FB59A2A8C402C0085F188 /* MarvelBaseViewController.swift in Sources */,
 				A27FB5812A8C356C0085F188 /* BaseNavigationController.swift in Sources */,
 				A27FB56E2A8C1F560085F188 /* CharacterRequest.swift in Sources */,
 			);

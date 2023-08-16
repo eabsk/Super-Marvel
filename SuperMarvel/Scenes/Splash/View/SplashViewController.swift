@@ -1,17 +1,10 @@
-//  
-//  SplashViewController.swift
-//  SuperMarvel
-//
-//  Created by Eslam Abdelmaqsoud on 16/08/2023.
-//
-
 import UIKit
 
 protocol SplashCoordinatorProtocol {
-
+    func loadCharactersView()
 }
 
-class SplashViewController: MarvelBaseViewController {
+class SplashViewController: UIViewController {
     
     // MARK: - Properties
 
@@ -23,12 +16,10 @@ class SplashViewController: MarvelBaseViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            guard let self else { return }
+            coordinator.loadCharactersView()
+        }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-       super.viewDidAppear(true)
-        
-    }
-
 }

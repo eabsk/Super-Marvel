@@ -1,15 +1,8 @@
-//
-//  UIViewController+ Ex .swift
-//  SuperMarvel
-//
-//  Created by Eslam Abdelmaqsoud on 16/08/2023.
-//
-
 import UIKit
 
 extension UIViewController {
     
-    /// customed to get latest (top) view controller
+    /// custom to get latest (top) view controller
     public func topMostViewController() -> UIViewController {
         
         if let presented = self.presentedViewController {

@@ -3,7 +3,7 @@ import Foundation
 struct CharacterDTO: Codable {
     let id: Int?
     let name, description: String?
-    let modified: Date?
+    let modified: String?
     let thumbnail: Thumbnail?
     let comics, series: Comics?
 }
@@ -13,7 +13,6 @@ struct Comics: Codable {
     let available: Int?
     let collectionURI: String?
     let items: [ComicsItem]?
-    let returned: Int?
 }
 
 // MARK: - ComicsItem
