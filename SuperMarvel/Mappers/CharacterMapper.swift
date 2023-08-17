@@ -1,6 +1,6 @@
 import Foundation
 
-class CharacterMapper {
+final class CharacterMapper {
     
     static let instance = CharacterMapper()
     private init() {}
@@ -11,7 +11,10 @@ class CharacterMapper {
                            name: character.name ?? "",
                            description: character.description ?? "",
                            modified: character.modified ?? "",
-                           image: character.imageUrlPath)
+                           image: character.imageUrlPath,
+                           comics: character.comics?.items ?? [],
+                           series: character.series?.items ?? [],
+                           stories: character.stories?.items ?? [])
         } ?? []
     }
 }

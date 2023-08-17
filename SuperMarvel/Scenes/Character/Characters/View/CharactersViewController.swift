@@ -1,7 +1,7 @@
 import UIKit
 
 protocol CharactersCoordinatorProtocol {
-    
+    func loadCharacterDetailsView(character: CharacterModel)
 }
 
 class CharactersViewController: MarvelBaseVC {
@@ -15,10 +15,8 @@ class CharactersViewController: MarvelBaseVC {
     var coordinator: CharactersCoordinatorProtocol!
     
     // MARK: - View LifeCycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Marvel Characters"
         setupUI()
         bindUI()
     }
@@ -31,6 +29,7 @@ class CharactersViewController: MarvelBaseVC {
     
     // MARK: - setupUI
     private func setupUI() {
+        title = "Marvel Characters"
         setupCollectionView()
         showDefaultLoader(viewLoadingContainer: view)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
@@ -61,6 +60,11 @@ extension CharactersViewController: CollectionViewDelegate {
         let cell: CharacterCollectionViewCell = collectionView.dequeue(indexPath: indexPath)
         viewModel.configure(cell: cell, index: indexPath.row)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = viewModel.didSelectCharacter(index: indexPath.row)
+        coordinator.loadCharacterDetailsView(character: character)
     }
     
     func collectionView(_ collectionView: UICollectionView,
