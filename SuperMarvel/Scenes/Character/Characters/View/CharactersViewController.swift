@@ -32,6 +32,14 @@ class CharactersViewController: UIViewController {
     // MARK: - setupUI
     private func setupUI() {
         setupCollectionView()
+//        let (blurView, activityIndicatorView) = UIViewController.getLoaderViews()
+//        showDefaultLoader(view: view, blurView: blurView, activityIndicatorView: activityIndicatorView)
+        showDefaultLoader(viewLoadingContainer: &view)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            guard let self else { return }
+            self.hideDefaultLoader()
+        }
     }
     
     // MARK: - bindUI
