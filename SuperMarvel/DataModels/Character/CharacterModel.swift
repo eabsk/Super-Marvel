@@ -1,10 +1,3 @@
-//
-//  CharacterModel.swift
-//  SuperMarvel
-//
-//  Created by Eslam Abdelmaqsoud on 16/08/2023.
-//
-
 import Foundation
 
 struct CharacterModel {
@@ -12,4 +5,5 @@ struct CharacterModel {
     let name: String
     let description: String
     let modified: String
+    let image: String
 }
