@@ -23,7 +23,7 @@ class CharactersViewModel {
             case .finished:
                 self.shouldReloadPublisher.send()
             case .failure(let error):
-                print("Error:\n", error.message)
+                debugPrint("Error:\n", error.message)
             }
         } receiveValue: { response in
             let characters = CharacterMapper.instance.mapToCharacters(characters: response.data?.results)

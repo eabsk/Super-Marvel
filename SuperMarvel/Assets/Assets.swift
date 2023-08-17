@@ -27,6 +27,7 @@ internal enum Asset {
   internal enum Assets {
     internal static let accentColor = ColorAsset(name: "AccentColor")
     internal static let marvelLogo = ImageAsset(name: "marvelLogo")
+    internal static let placeholderAvatar = ImageAsset(name: "placeholder-avatar")
   }
   internal enum ColorAssets {
     internal static let splashBackground = ColorAsset(name: "splashBackground")
