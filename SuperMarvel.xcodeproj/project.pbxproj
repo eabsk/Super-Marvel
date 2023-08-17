@@ -32,7 +32,6 @@
 		A27FB5852A8C38FD0085F188 /* MainCoordinator+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5842A8C38FD0085F188 /* MainCoordinator+ Ex.swift */; };
 		A27FB5952A8C3E580085F188 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB58F2A8C3E580085F188 /* SplashViewController.swift */; };
 		A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FB5902A8C3E580085F188 /* SplashViewController.xib */; };
-		A27FB5972A8C3E580085F188 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5922A8C3E580085F188 /* SplashViewModel.swift */; };
 		A27FB5982A8C3E580085F188 /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5942A8C3E580085F188 /* SplashFactory.swift */; };
 		A27FB5A02A8D007C0085F188 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB59F2A8D007C0085F188 /* CharacterRepository.swift */; };
 		A27FB5B42A8D02240085F188 /* CharactersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5AE2A8D02240085F188 /* CharactersFactory.swift */; };
@@ -104,7 +103,6 @@
 		A27FB5842A8C38FD0085F188 /* MainCoordinator+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+ Ex.swift"; sourceTree = "<group>"; };
 		A27FB58F2A8C3E580085F188 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A27FB5902A8C3E580085F188 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
-		A27FB5922A8C3E580085F188 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		A27FB5942A8C3E580085F188 /* SplashFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
 		A27FB59F2A8D007C0085F188 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		A27FB5AE2A8D02240085F188 /* CharactersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersFactory.swift; sourceTree = "<group>"; };
@@ -281,7 +279,6 @@
 			children = (
 				A27FB5932A8C3E580085F188 /* Factory */,
 				A27FB58E2A8C3E580085F188 /* View */,
-				A27FB5912A8C3E580085F188 /* ViewModel */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -293,14 +290,6 @@
 				A27FB5902A8C3E580085F188 /* SplashViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A27FB5912A8C3E580085F188 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A27FB5922A8C3E580085F188 /* SplashViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A27FB5932A8C3E580085F188 /* Factory */ = {
@@ -859,7 +848,6 @@
 				A2D7E05F2A88698E00E7BA04 /* URLs.swift in Sources */,
 				A2D7E05D2A8866A200E7BA04 /* Configurations.swift in Sources */,
 				A27FB5952A8C3E580085F188 /* SplashViewController.swift in Sources */,
-				A27FB5972A8C3E580085F188 /* SplashViewModel.swift in Sources */,
 				A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */,
 				A27FB57E2A8C34E70085F188 /* UIApplication+ Ex.swift in Sources */,
 				A2D7E0332A8856B600E7BA04 /* UserDefaultsWrappers.swift in Sources */,
