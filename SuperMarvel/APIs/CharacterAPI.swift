@@ -1,7 +1,7 @@
 import Moya
 
 enum CharacterAPI {
-    case getCharacters
+    case getCharacters(offset: String)
 }
 
 extension CharacterAPI: TargetType {
@@ -15,6 +15,15 @@ extension CharacterAPI: TargetType {
     var method: Moya.Method {
         switch self {
         case .getCharacters: return .get
+        }
+    }
+    
+    var parameters: [String: Any]? {
+        var params: [String: Any] = defaultParameters ?? [:]
+        switch self {
+        case .getCharacters(let offset):
+            params["offset"] = offset
+            return params
         }
     }
     

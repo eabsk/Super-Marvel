@@ -2,15 +2,15 @@ import Combine
 
 protocol CharacterRepositoryProtocol {
     typealias CharactersResults = Future<BaseResponseModel<CharacterDTO>, ServerError>
-    func getCharacters() -> CharactersResults
+    func getCharacters(offset: String) -> CharactersResults
 }
 
 class CharacterRepository: CharacterRepositoryProtocol {
     
     private let characterRequests: CharacterRequestProtocol = CharacterRequest()
     
-    func getCharacters() -> CharactersResults {
-        characterRequests.getCharacters()
+    func getCharacters(offset: String) -> CharactersResults {
+        characterRequests.getCharacters(offset: offset)
     }
     
 }

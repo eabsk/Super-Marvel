@@ -6,6 +6,7 @@ protocol CharactersViewModelProtocol {
     func configure(cell: CharacterCollectionViewCellProtocol, index: Int)
     func didSelectCharacter(index: Int) -> CharacterModel
     var shouldReloadPublisher: PassthroughSubject<Void, Never> { get }
+    var isLoadingPublisher: AnyPublisher<Bool, Never> { get }
 }
 
 class CharactersViewModel {
@@ -16,12 +17,19 @@ class CharactersViewModel {
     private var characters: [CharacterModel] = []
     var shouldReloadPublisher: PassthroughSubject<Void, Never> = PassthroughSubject()
     
+    @Published private var isLoading: Bool = false
+    var isLoadingPublisher: AnyPublisher<Bool, Never> {
+        $isLoading.eraseToAnyPublisher()
+    }
+
     func getCharacters() {
-        let characters = characterRepo.getCharacters()
+        isLoading = true
+        let characters = characterRepo.getCharacters(offset: "")
         characters.sink { completion in
             switch completion {
             case .finished:
                 self.shouldReloadPublisher.send()
+                self.isLoading = false
             case .failure(let error):
                 debugPrint("Error:\n", error.message)
             }
