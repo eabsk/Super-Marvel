@@ -1,7 +1,7 @@
 import UIKit
 
 protocol CharactersCoordinatorProtocol {
-    
+    func loadCharacterDetailsView(character: CharacterModel)
 }
 
 class CharactersViewController: MarvelBaseVC {
@@ -15,10 +15,8 @@ class CharactersViewController: MarvelBaseVC {
     var coordinator: CharactersCoordinatorProtocol!
     
     // MARK: - View LifeCycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Marvel Characters"
         setupUI()
         bindUI()
     }
@@ -31,6 +29,7 @@ class CharactersViewController: MarvelBaseVC {
     
     // MARK: - setupUI
     private func setupUI() {
+        title = "Marvel Characters"
         setupCollectionView()
         showDefaultLoader(viewLoadingContainer: view)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
@@ -63,6 +62,11 @@ extension CharactersViewController: CollectionViewDelegate {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = viewModel.didSelectCharacter(index: indexPath.row)
+        coordinator.loadCharacterDetailsView(character: character)
+    }
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -72,6 +76,6 @@ extension CharactersViewController: CollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: insetsWidth, bottom: 0, right: insetsWidth)
+        UIEdgeInsets(top: 0, left: insetsWidth, bottom: insetsWidth, right: insetsWidth)
     }
 }

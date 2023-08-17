@@ -11,9 +11,9 @@ extension UIViewController {
     
     func showDefaultLoader(viewLoadingContainer: UIView) {
         hideDefaultLoader()
-        UIViewController.activityIndicatorContainerView.frame = CGRect(x: 0, y: 0,
-                                                                       width: viewLoadingContainer.frame.width + 24,
-                                                                       height: viewLoadingContainer.frame.height + 38)
+        
+        UIViewController.activityIndicatorContainerView.frame = navigationController?.view.frame ?? CGRect()
+        UIViewController.activityIndicatorContainerView.center = navigationController?.view.center ?? CGPoint()
         UIViewController.activityIndicatorContainerView.backgroundColor = .systemBackground.withAlphaComponent(0.7)
         UIViewController.activityIndicatorView.center = UIViewController.activityIndicatorContainerView.center
         UIViewController.activityIndicatorView.startAnimating()

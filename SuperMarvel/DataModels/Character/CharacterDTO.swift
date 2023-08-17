@@ -6,6 +6,8 @@ struct CharacterDTO: Codable {
     let modified: String?
     let thumbnail: Thumbnail?
     let comics, series: Comics?
+    let stories: Stories?
+
     var imageUrlPath: String {
         (thumbnail?.path ?? "") + "."
         + (thumbnail?.thumbnailExtension ?? "")
@@ -14,8 +16,6 @@ struct CharacterDTO: Codable {
 
 // MARK: - Comics
 struct Comics: Codable {
-    let available: Int?
-    let collectionURI: String?
     let items: [ComicsItem]?
 }
 
@@ -23,6 +23,23 @@ struct Comics: Codable {
 struct ComicsItem: Codable {
     let resourceURI: String?
     let name: String?
+    var title: String {
+        name ?? ""
+    }
+}
+
+// MARK: - Stories
+struct Stories: Codable {
+    let items: [StoriesItem]?
+}
+
+// MARK: - StoriesItem
+struct StoriesItem: Codable {
+    let resourceURI: String?
+    let name, type: String?
+    var title: String {
+        name ?? ""
+    }
 }
 
 // MARK: - Thumbnail

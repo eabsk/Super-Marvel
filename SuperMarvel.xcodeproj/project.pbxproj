@@ -16,6 +16,19 @@
 		A2566CCE2A8D8EAD0000DF8B /* UIView+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CCD2A8D8EAD0000DF8B /* UIView+ Ex.swift */; };
 		A2566CD02A8E70BC0000DF8B /* MarvelBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CCF2A8E70BC0000DF8B /* MarvelBaseVC.swift */; };
 		A2566CD22A8E74750000DF8B /* UIImageView+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CD12A8E74750000DF8B /* UIImageView+ Ex.swift */; };
+		A2566CE02A8E977F0000DF8B /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CDA2A8E977F0000DF8B /* CharacterDetailsViewModel.swift */; };
+		A2566CE12A8E977F0000DF8B /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CDC2A8E977F0000DF8B /* CharacterDetailsViewController.swift */; };
+		A2566CE22A8E977F0000DF8B /* CharacterDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2566CDD2A8E977F0000DF8B /* CharacterDetailsViewController.xib */; };
+		A2566CE32A8E977F0000DF8B /* CharacterDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CDF2A8E977F0000DF8B /* CharacterDetailsFactory.swift */; };
+		A2566CE62A8EA8DF0000DF8B /* UITableView+ Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CE52A8EA8DF0000DF8B /* UITableView+ Ex.swift */; };
+		A2566CEA2A8EADD30000DF8B /* CharacterHeaderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CE82A8EADD30000DF8B /* CharacterHeaderCellView.swift */; };
+		A2566CEB2A8EADD30000DF8B /* CharacterHeaderCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2566CE92A8EADD30000DF8B /* CharacterHeaderCellView.xib */; };
+		A2566CEF2A8EB6570000DF8B /* CharacterDescriptionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CED2A8EB6570000DF8B /* CharacterDescriptionTableCell.swift */; };
+		A2566CF02A8EB6570000DF8B /* CharacterDescriptionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2566CEE2A8EB6570000DF8B /* CharacterDescriptionTableCell.xib */; };
+		A2566CF52A8EC1970000DF8B /* CharacterCollectionsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CF32A8EC1970000DF8B /* CharacterCollectionsTableCell.swift */; };
+		A2566CF62A8EC1970000DF8B /* CharacterCollectionsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2566CF42A8EC1970000DF8B /* CharacterCollectionsTableCell.xib */; };
+		A2566CF92A8EC6F10000DF8B /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2566CF72A8EC6F10000DF8B /* TagCollectionViewCell.swift */; };
+		A2566CFA2A8EC6F10000DF8B /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2566CF82A8EC6F10000DF8B /* TagCollectionViewCell.xib */; };
 		A27FB55A2A8B83250085F188 /* UrlPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5592A8B83250085F188 /* UrlPaths.swift */; };
 		A27FB55D2A8C11A60085F188 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB55C2A8C11A60085F188 /* BaseResponseModel.swift */; };
 		A27FB55F2A8C128B0085F188 /* TargetType + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB55E2A8C128B0085F188 /* TargetType + Extension.swift */; };
@@ -89,6 +102,19 @@
 		A2566CCD2A8D8EAD0000DF8B /* UIView+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ Ex.swift"; sourceTree = "<group>"; };
 		A2566CCF2A8E70BC0000DF8B /* MarvelBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelBaseVC.swift; sourceTree = "<group>"; };
 		A2566CD12A8E74750000DF8B /* UIImageView+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ Ex.swift"; sourceTree = "<group>"; };
+		A2566CDA2A8E977F0000DF8B /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		A2566CDC2A8E977F0000DF8B /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		A2566CDD2A8E977F0000DF8B /* CharacterDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterDetailsViewController.xib; sourceTree = "<group>"; };
+		A2566CDF2A8E977F0000DF8B /* CharacterDetailsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsFactory.swift; sourceTree = "<group>"; };
+		A2566CE52A8EA8DF0000DF8B /* UITableView+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ Ex.swift"; sourceTree = "<group>"; };
+		A2566CE82A8EADD30000DF8B /* CharacterHeaderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeaderCellView.swift; sourceTree = "<group>"; };
+		A2566CE92A8EADD30000DF8B /* CharacterHeaderCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterHeaderCellView.xib; sourceTree = "<group>"; };
+		A2566CED2A8EB6570000DF8B /* CharacterDescriptionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDescriptionTableCell.swift; sourceTree = "<group>"; };
+		A2566CEE2A8EB6570000DF8B /* CharacterDescriptionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDescriptionTableCell.xib; sourceTree = "<group>"; };
+		A2566CF32A8EC1970000DF8B /* CharacterCollectionsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionsTableCell.swift; sourceTree = "<group>"; };
+		A2566CF42A8EC1970000DF8B /* CharacterCollectionsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionsTableCell.xib; sourceTree = "<group>"; };
+		A2566CF72A8EC6F10000DF8B /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2566CF82A8EC6F10000DF8B /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		A27FB5592A8B83250085F188 /* UrlPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlPaths.swift; sourceTree = "<group>"; };
 		A27FB55C2A8C11A60085F188 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
 		A27FB55E2A8C128B0085F188 /* TargetType + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType + Extension.swift"; sourceTree = "<group>"; };
@@ -203,6 +229,78 @@
 			path = CharacterCollectionCell;
 			sourceTree = "<group>";
 		};
+		A2566CD92A8E977F0000DF8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CDA2A8E977F0000DF8B /* CharacterDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A2566CDB2A8E977F0000DF8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CDC2A8E977F0000DF8B /* CharacterDetailsViewController.swift */,
+				A2566CDD2A8E977F0000DF8B /* CharacterDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2566CDE2A8E977F0000DF8B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CDF2A8E977F0000DF8B /* CharacterDetailsFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		A2566CE42A8E99A60000DF8B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CE72A8EAD360000DF8B /* CharacterHeaderCellView */,
+				A2566CEC2A8EB62C0000DF8B /* CharacterDescribtionCell */,
+				A2566CF12A8EC1340000DF8B /* CharcterCollectionsTableCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A2566CE72A8EAD360000DF8B /* CharacterHeaderCellView */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CE82A8EADD30000DF8B /* CharacterHeaderCellView.swift */,
+				A2566CE92A8EADD30000DF8B /* CharacterHeaderCellView.xib */,
+			);
+			path = CharacterHeaderCellView;
+			sourceTree = "<group>";
+		};
+		A2566CEC2A8EB62C0000DF8B /* CharacterDescribtionCell */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CED2A8EB6570000DF8B /* CharacterDescriptionTableCell.swift */,
+				A2566CEE2A8EB6570000DF8B /* CharacterDescriptionTableCell.xib */,
+			);
+			path = CharacterDescribtionCell;
+			sourceTree = "<group>";
+		};
+		A2566CF12A8EC1340000DF8B /* CharcterCollectionsTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CF22A8EC1700000DF8B /* CollectionViewCell */,
+				A2566CF32A8EC1970000DF8B /* CharacterCollectionsTableCell.swift */,
+				A2566CF42A8EC1970000DF8B /* CharacterCollectionsTableCell.xib */,
+			);
+			path = CharcterCollectionsTableCell;
+			sourceTree = "<group>";
+		};
+		A2566CF22A8EC1700000DF8B /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A2566CF72A8EC6F10000DF8B /* TagCollectionViewCell.swift */,
+				A2566CF82A8EC6F10000DF8B /* TagCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		A27FB5582A8B829B0085F188 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,8 +371,8 @@
 		A27FB5862A8C3DDE0085F188 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A27FB5A42A8D02090085F188 /* Character */,
 				A27FB5872A8C3E3C0085F188 /* Splash */,
+				A27FB5A42A8D02090085F188 /* Character */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -325,6 +423,10 @@
 		A27FB5A52A8D02090085F188 /* CharacterDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A2566CE42A8E99A60000DF8B /* CustomViews */,
+				A2566CDE2A8E977F0000DF8B /* Factory */,
+				A2566CDB2A8E977F0000DF8B /* View */,
+				A2566CD92A8E977F0000DF8B /* ViewModel */,
 			);
 			path = CharacterDetails;
 			sourceTree = "<group>";
@@ -460,6 +562,7 @@
 				A27FB57D2A8C34E70085F188 /* UIApplication+ Ex.swift */,
 				A27FB5822A8C37680085F188 /* UIViewController+ Ex .swift */,
 				A2566CC52A8D8A130000DF8B /* UICollectionView+ Ex.swift */,
+				A2566CE52A8EA8DF0000DF8B /* UITableView+ Ex.swift */,
 				A2566CCD2A8D8EAD0000DF8B /* UIView+ Ex.swift */,
 				A2566CD12A8E74750000DF8B /* UIImageView+ Ex.swift */,
 			);
@@ -658,10 +761,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27FB5B62A8D02240085F188 /* CharactersViewController.xib in Resources */,
+				A2566CE22A8E977F0000DF8B /* CharacterDetailsViewController.xib in Resources */,
 				A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */,
+				A2566CF02A8EB6570000DF8B /* CharacterDescriptionTableCell.xib in Resources */,
 				A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */,
 				A2D7E0272A884C6500E7BA04 /* NetworkErrorStrings.strings in Resources */,
 				A2566CCC2A8D8C1A0000DF8B /* CharacterCollectionViewCell.xib in Resources */,
+				A2566CF62A8EC1970000DF8B /* CharacterCollectionsTableCell.xib in Resources */,
+				A2566CEB2A8EADD30000DF8B /* CharacterHeaderCellView.xib in Resources */,
+				A2566CFA2A8EC6F10000DF8B /* TagCollectionViewCell.xib in Resources */,
 				A2D7E0232A884BC500E7BA04 /* ColorAssets.xcassets in Resources */,
 				A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */,
 			);
@@ -838,6 +946,7 @@
 				A27FB5B42A8D02240085F188 /* CharactersFactory.swift in Sources */,
 				A27FB5702A8C1F6F0085F188 /* BaseRequest.swift in Sources */,
 				A27FB5B52A8D02240085F188 /* CharactersViewModel.swift in Sources */,
+				A2566CF92A8EC6F10000DF8B /* TagCollectionViewCell.swift in Sources */,
 				A2D7E0372A88578100E7BA04 /* AppObservers.swift in Sources */,
 				A27FB5782A8C32990085F188 /* MainCoordinator.swift in Sources */,
 				A27FB5732A8C214A0085F188 /* CharacterDTO.swift in Sources */,
@@ -853,8 +962,12 @@
 				A27FB5612A8C14A00085F188 /* MoyaProvider+ Request.swift in Sources */,
 				A27FB57A2A8C32F90085F188 /* BaseCoordinator.swift in Sources */,
 				A2D7E05F2A88698E00E7BA04 /* URLs.swift in Sources */,
+				A2566CE32A8E977F0000DF8B /* CharacterDetailsFactory.swift in Sources */,
+				A2566CE62A8EA8DF0000DF8B /* UITableView+ Ex.swift in Sources */,
 				A2D7E05D2A8866A200E7BA04 /* Configurations.swift in Sources */,
+				A2566CEF2A8EB6570000DF8B /* CharacterDescriptionTableCell.swift in Sources */,
 				A27FB5952A8C3E580085F188 /* SplashViewController.swift in Sources */,
+				A2566CE02A8E977F0000DF8B /* CharacterDetailsViewModel.swift in Sources */,
 				A2566CD02A8E70BC0000DF8B /* MarvelBaseVC.swift in Sources */,
 				A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */,
 				A27FB57E2A8C34E70085F188 /* UIApplication+ Ex.swift in Sources */,
@@ -863,7 +976,10 @@
 				A2566CCB2A8D8C1A0000DF8B /* CharacterCollectionViewCell.swift in Sources */,
 				A27FB5852A8C38FD0085F188 /* MainCoordinator+ Views.swift in Sources */,
 				A2566CCE2A8D8EAD0000DF8B /* UIView+ Ex.swift in Sources */,
+				A2566CE12A8E977F0000DF8B /* CharacterDetailsViewController.swift in Sources */,
+				A2566CF52A8EC1970000DF8B /* CharacterCollectionsTableCell.swift in Sources */,
 				A27FB5BC2A8D6F920085F188 /* CharacterModel.swift in Sources */,
+				A2566CEA2A8EADD30000DF8B /* CharacterHeaderCellView.swift in Sources */,
 				A27FB5BA2A8D6E840085F188 /* CharacterMapper.swift in Sources */,
 				A2D7E0312A88564400E7BA04 /* LocalizeService.swift in Sources */,
 				A27FB5832A8C37680085F188 /* UIViewController+ Ex .swift in Sources */,

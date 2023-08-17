@@ -18,5 +18,14 @@ extension MainCoordinator: CharactersCoordinatorProtocol {
         navigationController = BaseNavigationController(rootViewController: vc)
         UIApplication.shared.restartTo(navigationController, animated: true)
     }
+}
+
+// MARK: - load Characters View
+extension MainCoordinator: CharacterDetailsCoordinatorProtocol {
     
+    func loadCharacterDetailsView(character: CharacterModel) {
+        let vc = container.resolveCharacterDetailsController(character: character,
+                                                             coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
