@@ -5,4 +5,5 @@ struct CharacterModel {
     let name: String
     let description: String
     let modified: String
+    let image: String
 }

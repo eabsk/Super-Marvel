@@ -2,17 +2,16 @@ import UIKit
 
 class BaseNavigationController: UINavigationController {
     
-    private var tintColor = UIColor.systemRed
+    private var tintColor = UIColor.label
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationBar.backgroundColor = .systemBackground
+        navigationBar.backgroundColor = .clear
         
         initializeNavigationBarAppearance()
         
         setNeedsStatusBarAppearanceUpdate() // For preferredStatusBarStyle
-        
         navigationBar.titleTextAttributes = [
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .semibold),
             NSAttributedString.Key.foregroundColor: tintColor
@@ -35,10 +34,5 @@ class BaseNavigationController: UINavigationController {
     func initializeNavigationBarAppearance() {
         navigationBar.tintColor = tintColor
     }
-    
-    func setNavBarHandleForTransparent() {
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationBar.shadowImage = UIImage()
-        view.backgroundColor = .clear
-    }
+
 }

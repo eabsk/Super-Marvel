@@ -23,23 +23,22 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vUO-qA-rUv">
                                 <rect key="frame" x="0.0" y="0.0" width="198" height="268"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50403559602649006" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9y-oB-AaN">
                                 <rect key="frame" x="0.0" y="188" width="198" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spider ManSpider ManSpider ManSpider Man" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6W-nm-Um5">
-                                        <rect key="frame" x="12" y="0.0" width="174" height="80"/>
+                                        <rect key="frame" x="12" y="39.333333333333343" width="174" height="32.666666666666657"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
-                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="w6W-nm-Um5" firstAttribute="leading" secondItem="N9y-oB-AaN" secondAttribute="leading" constant="12" id="3oT-go-upk"/>
-                                    <constraint firstItem="w6W-nm-Um5" firstAttribute="top" secondItem="N9y-oB-AaN" secondAttribute="top" id="eJS-Uq-XKl"/>
-                                    <constraint firstAttribute="bottom" secondItem="w6W-nm-Um5" secondAttribute="bottom" id="fAP-k5-UTA"/>
+                                    <constraint firstAttribute="bottom" secondItem="w6W-nm-Um5" secondAttribute="bottom" constant="8" id="fAP-k5-UTA"/>
                                     <constraint firstAttribute="height" constant="80" id="lSQ-0t-4xW"/>
                                     <constraint firstAttribute="trailing" secondItem="w6W-nm-Um5" secondAttribute="trailing" constant="12" id="y5w-SP-T7e"/>
                                 </constraints>
@@ -72,6 +71,8 @@
             </constraints>
             <size key="customSize" width="198" height="268"/>
             <connections>
+                <outlet property="characterImageView" destination="vUO-qA-rUv" id="9Ne-bf-C7H"/>
+                <outlet property="characterNameLabel" destination="w6W-nm-Um5" id="2AC-Bp-17B"/>
                 <outlet property="gradientLayerView" destination="N9y-oB-AaN" id="HiO-o0-3Mr"/>
             </connections>
             <point key="canvasLocation" x="242.74809160305344" y="64.788732394366207"/>

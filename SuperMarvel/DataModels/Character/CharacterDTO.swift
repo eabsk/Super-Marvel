@@ -6,6 +6,10 @@ struct CharacterDTO: Codable {
     let modified: String?
     let thumbnail: Thumbnail?
     let comics, series: Comics?
+    var imageUrlPath: String {
+        (thumbnail?.path ?? "") + "."
+        + (thumbnail?.thumbnailExtension ?? "")
+    }
 }
 
 // MARK: - Comics

@@ -4,7 +4,7 @@ protocol CharactersCoordinatorProtocol {
     
 }
 
-class CharactersViewController: UIViewController {
+class CharactersViewController: MarvelBaseVC {
     
     // MARK: - Properties
     @IBOutlet weak var charactersCollectionView: UICollectionView!
@@ -32,10 +32,7 @@ class CharactersViewController: UIViewController {
     // MARK: - setupUI
     private func setupUI() {
         setupCollectionView()
-//        let (blurView, activityIndicatorView) = UIViewController.getLoaderViews()
-//        showDefaultLoader(view: view, blurView: blurView, activityIndicatorView: activityIndicatorView)
-        showDefaultLoader(viewLoadingContainer: &view)
-        
+        showDefaultLoader(viewLoadingContainer: view)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
             guard let self else { return }
             self.hideDefaultLoader()
@@ -45,34 +42,36 @@ class CharactersViewController: UIViewController {
     // MARK: - bindUI
     private func bindUI() {
         viewModel.getCharacters()
+        viewModel.shouldReloadPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+                self.charactersCollectionView.reloadData()
+            }.store(in: &cancellable)
+        
     }
     
 }
 
 extension CharactersViewController: CollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        20
+        viewModel.charactersCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CharacterCollectionViewCell = collectionView.dequeue(indexPath: indexPath)
+        viewModel.configure(cell: cell, index: indexPath.row)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let horizontalItemCount: CGFloat = 2
-        let verticalItemCount: CGFloat = 3
-        let insetsWidth: CGFloat = insetsWidth * 3
-        let width = (view.frame.size.width - insetsWidth) / horizontalItemCount
-        let height = view.frame.size.height / verticalItemCount
-        return CGSize(width: width, height: height)
+        getCharactersCellSize()
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: insetsWidth, bottom: 0, right: insetsWidth)
+        UIEdgeInsets(top: 0, left: insetsWidth, bottom: 0, right: insetsWidth)
     }
 }
