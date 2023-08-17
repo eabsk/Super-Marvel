@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setRootViewController() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = .systemBackground
         self.window?.makeKeyAndVisible()
         appCoordinator = AppCoordinator()
         appCoordinator.loadSplashView()

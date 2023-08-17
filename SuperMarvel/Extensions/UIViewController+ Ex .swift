@@ -1,22 +1,42 @@
 import UIKit
+import NVActivityIndicatorView
 
 extension UIViewController {
     
-    /// custom to get latest (top) view controller
-    public func topMostViewController() -> UIViewController {
-        
-        if let presented = self.presentedViewController {
-            return presented.topMostViewController()
-        }
-        
-        if let navigation = self as? UINavigationController {
-            return navigation.visibleViewController?.topMostViewController() ?? navigation
-        }
-        
-        if let tab = self as? UITabBarController {
-            return tab.selectedViewController?.topMostViewController() ?? tab
-        }
-        
-        return self
+    static let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 80, height: 80),
+                                                               type: .ballTrianglePath,
+                                                               color: .label,
+                                                               padding: 0)
+    static let activityIndicatorContainerView = UIView()
+    
+    func showDefaultLoader(viewLoadingContainer: UIView) {
+        hideDefaultLoader()
+        UIViewController.activityIndicatorContainerView.frame = CGRect(x: 0, y: 0,
+                                                                       width: viewLoadingContainer.frame.width + 24,
+                                                                       height: viewLoadingContainer.frame.height + 38)
+        UIViewController.activityIndicatorContainerView.backgroundColor = .systemBackground.withAlphaComponent(0.7)
+        UIViewController.activityIndicatorView.center = UIViewController.activityIndicatorContainerView.center
+        UIViewController.activityIndicatorView.startAnimating()
+        navigationController?.isNavigationBarHidden = true
+        UIViewController.activityIndicatorContainerView.addSubview(UIViewController.activityIndicatorView)
+        viewLoadingContainer.addSubview(UIViewController.activityIndicatorContainerView)
+    }
+    
+    // MARK: - Hide Default Loader
+    func hideDefaultLoader() {
+        UIViewController.activityIndicatorView.stopAnimating()
+        UIViewController.activityIndicatorView.removeFromSuperview()
+        navigationController?.isNavigationBarHidden = false
+        UIViewController.activityIndicatorContainerView.removeFromSuperview()
+    }
+    
+    func getCharactersCellSize() -> CGSize {
+        let insetsWidth: CGFloat = Configurations.insetsWidth
+        let horizontalItemCount: CGFloat = 2
+        let verticalItemCount: CGFloat = 3
+        let insetsSpaces: CGFloat = insetsWidth * 3
+        let width = (view.frame.size.width - insetsSpaces) / horizontalItemCount
+        let height = view.frame.size.height / verticalItemCount
+        return CGSize(width: width, height: height)
     }
 }

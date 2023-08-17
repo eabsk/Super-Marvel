@@ -4,9 +4,8 @@ extension TargetType {
     
     var baseURL: URL {
         
-        guard let url = URL(string: URLs.baseURL) else {
-            fatalError("invalid error message")
-        }
+        guard let url = URL(string: URLs.baseURL)
+        else { fatalError("invalid url") }
         return url
     }
     
@@ -25,9 +24,7 @@ extension TargetType {
             :
         ]
     }
-    
-    var sampleData: Data { return Data() }
-    
+        
 }
 
 extension Moya.Response {
