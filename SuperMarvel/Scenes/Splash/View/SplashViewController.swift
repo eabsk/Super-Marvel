@@ -16,7 +16,7 @@ class SplashViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
             guard let self else { return }
             coordinator.loadCharactersView()
         }

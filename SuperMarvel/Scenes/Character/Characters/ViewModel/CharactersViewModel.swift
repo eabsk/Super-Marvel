@@ -2,6 +2,7 @@ import Combine
 
 protocol CharactersViewModelProtocol {
     func getCharacters()
+//    var charactersCount: Int { get }
 }
 
 class CharactersViewModel {

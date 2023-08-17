@@ -6,26 +6,22 @@ class BaseNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationBar.backgroundColor = .white
+        view.backgroundColor = .systemBackground
+        navigationBar.backgroundColor = .systemBackground
         
         initializeNavigationBarAppearance()
         
         setNeedsStatusBarAppearanceUpdate() // For preferredStatusBarStyle
         
         navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont.systemFontSize,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .semibold),
             NSAttributedString.Key.foregroundColor: tintColor
         ]
         
-        // increase height for navigation bar all over the app
-        if #available(iOS 11.0, *) {
-            self.additionalSafeAreaInsets.top = 16
-        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .darkContent
+        return .default
     }
     
     func removeBorder() {

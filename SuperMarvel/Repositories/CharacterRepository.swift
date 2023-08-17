@@ -1,14 +1,15 @@
 import Combine
 
 protocol CharacterRepositoryProtocol {
-    func getCharacters() -> Future<BaseResponseModel<CharacterDTO>, ServerError>
+    typealias CharactersResults = Future<BaseResponseModel<CharacterDTO>, ServerError>
+    func getCharacters() -> CharactersResults
 }
 
 class CharacterRepository: CharacterRepositoryProtocol {
     
     private let characterRequests: CharacterRequestProtocol = CharacterRequest()
     
-    func getCharacters() -> Future<BaseResponseModel<CharacterDTO>, ServerError> {
+    func getCharacters() -> CharactersResults {
         characterRequests.getCharacters()
     }
     
