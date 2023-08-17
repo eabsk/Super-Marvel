@@ -72,6 +72,6 @@ extension CharactersViewController: CollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: insetsWidth, bottom: 0, right: insetsWidth)
+        UIEdgeInsets(top: 0, left: insetsWidth, bottom: insetsWidth, right: insetsWidth)
     }
 }
