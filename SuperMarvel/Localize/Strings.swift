@@ -11,8 +11,32 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 public enum L10n {
-  /// Message Delivered
-  public static let message = { L10n.tr("NetworkErrorStrings", "Message") }
+  public enum AppSettingsStr {
+    /// English
+    public static let english = { L10n.tr("AppSettingsStr", "English") }
+    /// Spanish
+    public static let spanish = { L10n.tr("AppSettingsStr", "Spanish") }
+  }
+  public enum CharacterStr {
+    /// Comics
+    public static let comics = { L10n.tr("CharacterStr", "Comics") }
+    /// Marvel Characters
+    public static let marvelCharacters = { L10n.tr("CharacterStr", "Marvel Characters") }
+    /// Series
+    public static let series = { L10n.tr("CharacterStr", "Series") }
+    /// Stories
+    public static let stories = { L10n.tr("CharacterStr", "Stories") }
+  }
+  public enum NetworkErrorStrings {
+    /// Connection error
+    public static let connectionError = { L10n.tr("NetworkErrorStrings", "Connection error") }
+    /// No data available
+    public static let noDataAvailable = { L10n.tr("NetworkErrorStrings", "No data available") }
+    /// serialization error
+    public static let serializationError = { L10n.tr("NetworkErrorStrings", "serialization error") }
+    /// Something went wrong
+    public static let somethingWentWrong = { L10n.tr("NetworkErrorStrings", "Something went wrong") }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

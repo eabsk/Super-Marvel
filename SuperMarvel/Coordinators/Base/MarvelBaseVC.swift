@@ -33,10 +33,10 @@ class MarvelBaseVC: UIViewController {
         guard let navBar = self.navigationController?.navigationBar else { return }
         navBar.addSubview(marvelLogoImage)
         NSLayoutConstraint.activate([
-            marvelLogoImage.trailingAnchor.constraint(equalTo: navBar.trailingAnchor, constant: -16),
+            marvelLogoImage.trailingAnchor.constraint(equalTo: navBar.trailingAnchor, constant: -4),
             marvelLogoImage.centerYAnchor.constraint(equalTo: navBar.centerYAnchor, constant: 0),
-            marvelLogoImage.widthAnchor.constraint(equalToConstant: 90),
-            marvelLogoImage.heightAnchor.constraint(equalToConstant: 40)
+            marvelLogoImage.widthAnchor.constraint(equalToConstant: 80),
+            marvelLogoImage.heightAnchor.constraint(equalToConstant: 24)
         ])
     }
     
@@ -45,12 +45,12 @@ class MarvelBaseVC: UIViewController {
         guard let iconImage = UIImage(systemName: "globe")
         else { return }
 
-        let spain = UIAction(title: "Spain 🇪🇸", image: iconImage, attributes: .destructive) { _ in
-            
+        let spain = UIAction(title: "\(L10n.AppSettingsStr.spanish()) 🇪🇸", image: iconImage, attributes: .destructive) { _ in
+            LocalizeService.shared.setLanguage(.spanish)
         }
         
-        let english = UIAction(title: "English 🇬🇧", image: iconImage) { _ in
-            
+        let english = UIAction(title: "\(L10n.AppSettingsStr.english()) 🇬🇧", image: iconImage) { _ in
+            LocalizeService.shared.setLanguage(.english)
         }
         
         let languageButton = UIButton(type: .system)

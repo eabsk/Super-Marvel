@@ -6,26 +6,25 @@ public class LocalizeService {
     enum Language: String {
         case english = "en"
         case arabic = "ar"
+        case spanish = "es"
         
         var locale: String {
             switch self {
-            case .english:
-                return "en-US"
-            case .arabic:
-                return "ar-SA"
+            case .english: return "en-US"
+            case .arabic: return "ar-SA"
+            case .spanish: return "es_ES"
             }
         }
         
         var title: String {
             switch self {
-            case .english:
-                return "English"
-            case .arabic:
-                return "العربية"
+            case .english: return "English"
+            case .arabic: return "العربية"
+            case .spanish: return "Española"
             }
         }
     }
-        
+    
     static var shared: LocalizeService = {
         return LocalizeService()
     }()
@@ -38,8 +37,10 @@ public class LocalizeService {
         let deviceLanguageString = Bundle.main.preferredLocalizations.first ?? "en"
         if deviceLanguageString.contains(Language.arabic.rawValue) {
             self.deviceLanguage = LocalizeService.Language.arabic
-        } else {
+        } else if deviceLanguageString.contains(Language.english.rawValue) {
             self.deviceLanguage = LocalizeService.Language.english
+        } else {
+            self.deviceLanguage = LocalizeService.Language.spanish
         }
         self.selectedLanguage = self.deviceLanguage
     }
@@ -49,7 +50,7 @@ public class LocalizeService {
     }
     
     var isRTL: Bool {
-        return self.isArabic
+        self.isArabic
     }
     
     var isArabic: Bool {

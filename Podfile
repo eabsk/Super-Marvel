@@ -12,7 +12,8 @@ target 'SuperMarvel' do
     pod 'SwiftLint'
     pod 'SwiftGen', '~> 6.0'
     pod 'NVActivityIndicatorView'
-    
+    pod 'L10n-swift', '~> 5.6'
+
     # Networking
     pod 'Moya', '~> 15.0'
     pod 'Kingfisher', '~> 7.0'

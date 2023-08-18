@@ -16,7 +16,7 @@ class CharacterCollectionsTableCell: UITableViewCell, CharacterCollectionsTableC
     var comics: [ComicsItem] = [] {
         didSet {
             let isComicEmpty = comics.isEmpty
-            titleLabels[0].text = "Comics (\(comics.count))"
+            titleLabels[0].text = L10n.CharacterStr.comics() + "(\(comics.count))"
             stackViewsHeight[0].constant = isComicEmpty ? 0 : 80
             collectionViews[0].reloadData()
         }
@@ -25,7 +25,7 @@ class CharacterCollectionsTableCell: UITableViewCell, CharacterCollectionsTableC
     var series: [ComicsItem] = [] {
         didSet {
             let isSeriesEmpty = series.isEmpty
-            titleLabels[1].text = "Series (\(series.count))"
+            titleLabels[1].text = L10n.CharacterStr.series() + "(\(series.count))"
             stackViewsHeight[1].constant = isSeriesEmpty ? 0 : 80
             collectionViews[1].reloadData()
         }
@@ -34,7 +34,7 @@ class CharacterCollectionsTableCell: UITableViewCell, CharacterCollectionsTableC
     var stories: [StoriesItem] = [] {
         didSet {
             let isStoriesEmpty = stories.isEmpty
-            titleLabels[2].text = "Stories (\(stories.count))"
+            titleLabels[2].text = L10n.CharacterStr.stories() + "(\(stories.count))"
             stackViewsHeight[2].constant = isStoriesEmpty ? 0 : 80
             collectionViews[2].reloadData()
         }
