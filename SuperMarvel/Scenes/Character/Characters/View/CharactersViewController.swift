@@ -82,4 +82,11 @@ extension CharactersViewController: CollectionViewDelegate {
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         UIEdgeInsets(top: 0, left: insetsWidth, bottom: insetsWidth, right: insetsWidth)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == viewModel.charactersCount - 1
+            && viewModel.charactersCount < viewModel.totalCharactersCount {
+            viewModel.getMoreCharacters()
+        }
+    }
 }

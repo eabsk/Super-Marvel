@@ -1,7 +1,7 @@
 import Moya
 
 enum CharacterAPI {
-    case getCharacters(offset: String)
+    case getCharacters(offset: Int)
 }
 
 extension CharacterAPI: TargetType {
@@ -23,6 +23,7 @@ extension CharacterAPI: TargetType {
         switch self {
         case .getCharacters(let offset):
             params["offset"] = offset
+            params["limit"] = Configurations.pageSize
             return params
         }
     }
