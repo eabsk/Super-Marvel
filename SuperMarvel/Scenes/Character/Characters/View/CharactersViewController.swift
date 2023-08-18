@@ -34,7 +34,7 @@ class CharactersViewController: MarvelBaseVC {
     
     // MARK: - setupUI
     private func setupUI() {
-        title = "Marvel Characters"
+        title = L10n.CharacterStr.marvelCharacters()
         setupCollectionView()
         addMarvelLogoToNavBar()
         addLanguageButton()

@@ -16,13 +16,13 @@ enum ServerError: Error {
     var message: String {
         switch self {
         case .network:
-            return "Connection error"
+            return L10n.NetworkErrorStrings.connectionError()
         case .serialization:
-            return  "serialization error"
+            return  L10n.NetworkErrorStrings.serializationError()
         case .general:
-            return  " Something went wrong"
+            return  L10n.NetworkErrorStrings.somethingWentWrong()
         case .noData:
-            return "No data available"
+            return L10n.NetworkErrorStrings.noDataAvailable()
         case let .message(error):
             return error
         }

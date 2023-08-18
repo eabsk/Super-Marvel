@@ -1,1 +1,4 @@
-"Message" = "Message Delivered";
+"Connection error" = "Connection error";
+"serialization error" = "serialization error";
+"Something went wrong" = "Something went wrong";
+"No data available" = "No data available";
