@@ -25,17 +25,18 @@ class CharactersViewController: MarvelBaseVC {
         charactersCollectionView.delegate = self
         charactersCollectionView.dataSource = self
         charactersCollectionView.refreshControl = refresherController
-        onRefresherControllerReload = { [weak self] in
+        charactersCollectionView.registerNib(cellClass: CharacterCollectionViewCell.self)
+        onStartRefresher = { [weak self] in
             guard let self else { return }
             self.viewModel.didPullToRefresh()
         }
-        charactersCollectionView.registerNib(cellClass: CharacterCollectionViewCell.self)
     }
     
     // MARK: - setupUI
     private func setupUI() {
         title = "Marvel Characters"
         setupCollectionView()
+        addMarvelLogoToNavBar()
     }
     
     // MARK: - bindUI
@@ -62,16 +63,14 @@ class CharactersViewController: MarvelBaseVC {
         viewModel.isLoadingPublisher
             .receive(on: DispatchQueue.main)
             .sink { isLoading in
-                if isLoading {
-                    self.showDefaultLoader(viewLoadingContainer: self.view)
-                } else {
-                    self.hideDefaultLoader()
-                }
+                isLoading ?
+                self.showDefaultLoader() : self.hideDefaultLoader()
             }.store(in: &cancellable)
     }
     
 }
 
+// MARK: - CollectionView Delegate
 extension CharactersViewController: CollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.charactersCount
