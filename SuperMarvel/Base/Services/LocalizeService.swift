@@ -3,11 +3,11 @@ import UIKit
 
 public class LocalizeService {
     
-    public enum Language: String {
+    enum Language: String {
         case english = "en"
         case arabic = "ar"
         
-        public var locale: String {
+        var locale: String {
             switch self {
             case .english:
                 return "en-US"
@@ -16,7 +16,7 @@ public class LocalizeService {
             }
         }
         
-        public var title: String {
+        var title: String {
             switch self {
             case .english:
                 return "English"
@@ -26,12 +26,12 @@ public class LocalizeService {
         }
     }
         
-    public static var shared: LocalizeService = {
+    static var shared: LocalizeService = {
         return LocalizeService()
     }()
     
     private (set) var deviceLanguage: Language
-    public var selectedLanguage: LocalizeService.Language
+    var selectedLanguage: LocalizeService.Language
     
     private init() {
         
@@ -48,19 +48,19 @@ public class LocalizeService {
         self.setLanguage(self.selectedLanguage)
     }
     
-    public var isRTL: Bool {
+    var isRTL: Bool {
         return self.isArabic
     }
     
-    public var isArabic: Bool {
+    var isArabic: Bool {
         return self.selectedLanguage == LocalizeService.Language.arabic
     }
     
-    public var isTheSameDeviceLanguage: Bool {
+    var isTheSameDeviceLanguage: Bool {
         return self.deviceLanguage == self.selectedLanguage
     }
     
-    public func setLanguage(_ language: Language) {
+    func setLanguage(_ language: Language) {
         self.selectedLanguage = language
         Bundle.setLanguage(self.selectedLanguage.rawValue)
         UserDefaults.selectedLanguage = self.selectedLanguage.rawValue

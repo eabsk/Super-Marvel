@@ -5,10 +5,13 @@ protocol CharactersViewModelProtocol {
     var charactersCount: Int { get }
     var totalCharactersCount: Int { get }
     var shouldReloadPublisher: PassthroughSubject<Void, Never> { get }
+    var shouldStopRefresherPublisher: PassthroughSubject<Void, Never> { get }
+    var showErrorMessagePublisher: PassthroughSubject<String, Never> { get }
     var isLoadingPublisher: AnyPublisher<Bool, Never> { get }
+    func didPullToRefresh()
     func configure(cell: CharacterCollectionViewCellProtocol, index: Int)
     func didSelectCharacter(index: Int) -> CharacterModel
-   func getMoreCharacters()
+    func getMoreCharacters()
 }
 
 class CharactersViewModel {
@@ -17,26 +20,25 @@ class CharactersViewModel {
     private let characterRepo: CharacterRepositoryProtocol = CharacterRepository()
     
     private var characters: [CharacterModel] = []
+    private var offset = 0
     private(set) var totalCharactersCount: Int = 0
+    
     var shouldReloadPublisher: PassthroughSubject<Void, Never> = PassthroughSubject()
+    var shouldStopRefresherPublisher: PassthroughSubject<Void, Never> = PassthroughSubject()
+    var showErrorMessagePublisher: PassthroughSubject<String, Never> = PassthroughSubject()
     
     @Published private var isLoading: Bool = false
-    var isLoadingPublisher: AnyPublisher<Bool, Never> {
-        $isLoading.eraseToAnyPublisher()
-    }
-
-    private var offset = 0
-    
+    var isLoadingPublisher: AnyPublisher<Bool, Never> { $isLoading.eraseToAnyPublisher() }
+        
     func getCharacters() {
         isLoading = true
         let characters = characterRepo.getCharacters(offset: offset)
         characters.sink { completion in
             switch completion {
             case .finished:
-                self.shouldReloadPublisher.send()
-                self.isLoading = false
+                self.didFinishRequest(withError: nil)
             case .failure(let error):
-                debugPrint("Error:\n", error.message)
+                self.didFinishRequest(withError: error.message)
             }
         } receiveValue: { response in
             self.totalCharactersCount = response.data?.total ?? 0
@@ -64,5 +66,20 @@ extension CharactersViewModel: CharactersViewModelProtocol {
     func getMoreCharacters() {
         offset += Configurations.pageSize
         getCharacters()
+    }
+    
+    func didPullToRefresh() {
+      offset = 0
+        characters = []
+        shouldReloadPublisher.send()
+        getCharacters()
+    }
+    
+    private func didFinishRequest(withError: String?) {
+        self.isLoading = false
+        self.shouldReloadPublisher.send()
+        self.shouldStopRefresherPublisher.send()
+        guard let withError else { return }
+        self.showErrorMessagePublisher.send(withError)
     }
 }
