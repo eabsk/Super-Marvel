@@ -31,11 +31,6 @@ class CharactersViewController: MarvelBaseVC {
     private func setupUI() {
         title = "Marvel Characters"
         setupCollectionView()
-        showDefaultLoader(viewLoadingContainer: view)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-            guard let self else { return }
-            self.hideDefaultLoader()
-        }
     }
     
     // MARK: - bindUI
@@ -47,6 +42,15 @@ class CharactersViewController: MarvelBaseVC {
                 self.charactersCollectionView.reloadData()
             }.store(in: &cancellable)
         
+        viewModel.isLoadingPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { isLoading in
+                if isLoading {
+                    self.showDefaultLoader(viewLoadingContainer: self.view)
+                } else {
+                    self.hideDefaultLoader()
+                }
+            }.store(in: &cancellable)
     }
     
 }
@@ -77,5 +81,12 @@ extension CharactersViewController: CollectionViewDelegate {
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         UIEdgeInsets(top: 0, left: insetsWidth, bottom: insetsWidth, right: insetsWidth)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == viewModel.charactersCount - 1
+            && viewModel.charactersCount < viewModel.totalCharactersCount {
+            viewModel.getMoreCharacters()
+        }
     }
 }
