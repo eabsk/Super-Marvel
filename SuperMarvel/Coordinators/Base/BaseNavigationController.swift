@@ -13,7 +13,7 @@ class BaseNavigationController: UINavigationController {
         
         setNeedsStatusBarAppearanceUpdate() // For preferredStatusBarStyle
         navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: .semibold),
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .semibold),
             NSAttributedString.Key.foregroundColor: tintColor
         ]
         
