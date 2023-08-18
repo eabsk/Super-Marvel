@@ -2,12 +2,12 @@ import Combine
 
 protocol CharacterRequestProtocol {
     typealias CharactersResults = Future<BaseResponseModel<CharacterDTO>, ServerError>
-    func getCharacters() -> CharactersResults
+    func getCharacters(offset: Int) -> CharactersResults
 }
 
 final class CharacterRequest: BaseRequest<CharacterAPI>, CharacterRequestProtocol {
     
-    func getCharacters() -> CharactersResults {
-        moyaProvide.request(.getCharacters)
+    func getCharacters(offset: Int) -> CharactersResults {
+        moyaProvide.request(.getCharacters(offset: offset))
     }
 }

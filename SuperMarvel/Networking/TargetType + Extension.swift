@@ -2,6 +2,12 @@ import Moya
 
 extension TargetType {
     
+    var defaultParameters: [String: Any]? {
+        [
+            :
+        ]
+    }
+    
     var baseURL: URL {
         
         guard let url = URL(string: URLs.baseURL)
@@ -20,13 +26,9 @@ extension TargetType {
     }
     
     var parameters: [String: Any]? {
-        [
-            "apikey": "e959b603bcec131723e4e651784ad340",
-            "ts": "1691528326",
-            "hash": "2e25bc2d763f933b6f616bd4d0b76023"
-        ]
+        defaultParameters
     }
-        
+    
 }
 
 extension Moya.Response {
