@@ -24,13 +24,20 @@ class CharactersViewController: MarvelBaseVC {
     private func setupCollectionView() {
         charactersCollectionView.delegate = self
         charactersCollectionView.dataSource = self
+        charactersCollectionView.refreshControl = refresherController
         charactersCollectionView.registerNib(cellClass: CharacterCollectionViewCell.self)
+        onStartRefresher = { [weak self] in
+            guard let self else { return }
+            self.viewModel.didPullToRefresh()
+        }
     }
     
     // MARK: - setupUI
     private func setupUI() {
         title = "Marvel Characters"
         setupCollectionView()
+        addMarvelLogoToNavBar()
+        addLanguageButton()
     }
     
     // MARK: - bindUI
@@ -42,19 +49,29 @@ class CharactersViewController: MarvelBaseVC {
                 self.charactersCollectionView.reloadData()
             }.store(in: &cancellable)
         
+        viewModel.shouldStopRefresherPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+                self.refresherController.endRefreshing()
+            }.store(in: &cancellable)
+        
+        viewModel.showErrorMessagePublisher
+            .receive(on: DispatchQueue.main)
+            .sink { errorMessage in
+                ToastManager.shared.showError(message: errorMessage, view: self.view)
+            }.store(in: &cancellable)
+        
         viewModel.isLoadingPublisher
             .receive(on: DispatchQueue.main)
             .sink { isLoading in
-                if isLoading {
-                    self.showDefaultLoader(viewLoadingContainer: self.view)
-                } else {
-                    self.hideDefaultLoader()
-                }
+                isLoading ?
+                self.showDefaultLoader() : self.hideDefaultLoader()
             }.store(in: &cancellable)
     }
     
 }
 
+// MARK: - CollectionView Delegate
 extension CharactersViewController: CollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.charactersCount
