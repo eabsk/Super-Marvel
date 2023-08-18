@@ -40,11 +40,36 @@ class MarvelBaseVC: UIViewController {
         ])
     }
     
+    // MARK: - Add Language Button To NavBar
+    func addLanguageButton() {
+        guard let iconImage = UIImage(systemName: "globe")
+        else { return }
+
+        let spain = UIAction(title: "Spain 🇪🇸", image: iconImage, attributes: .destructive) { _ in
+            
+        }
+        
+        let english = UIAction(title: "English 🇬🇧", image: iconImage) { _ in
+            
+        }
+        
+        let languageButton = UIButton(type: .system)
+        languageButton.setImage(iconImage, for: .normal)
+        if #available(iOS 14.0, *) {
+            languageButton.showsMenuAsPrimaryAction = true
+            languageButton.menu = UIMenu(title: "", children: [spain, english])
+        } else {
+            // show bottom Sheet with available languages
+        }
+        languageButton.addTarget(self, action: #selector(presentMenu), for: .touchUpInside)
+        navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: languageButton)]
+    }
+    
     // MARK: - Show Default Loader
     func showDefaultLoader() {
         
         hideDefaultLoader()
-                
+        
         if viewLoadingContainer != nil && view.subviews.contains(viewLoadingContainer ?? UIView()) {
             return;
         }
@@ -72,7 +97,7 @@ class MarvelBaseVC: UIViewController {
     }
     
     // MARK: - Hide Default Loader
-    public func hideDefaultLoader() {
+    func hideDefaultLoader() {
         if let activity = activityIndicatorView {
             activity.removeFromSuperview()
             activity.stopAnimating()
@@ -81,5 +106,40 @@ class MarvelBaseVC: UIViewController {
         if let loadingContainer = viewLoadingContainer {
             loadingContainer.removeFromSuperview()
         }
+    }
+    
+    @objc
+    private func presentMenu() {
+      
+    }
+}
+
+class ContextMenuButton: UIButton {
+    var previewProvider: UIContextMenuContentPreviewProvider?
+    var actionProvider: UIContextMenuActionProvider?
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+
+    func setup() {
+        let interaction = UIContextMenuInteraction(delegate: self)
+        addInteraction(interaction)
+        backgroundColor = .green
+    }
+
+    override func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
+                                         configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+        UIContextMenuConfiguration(
+            identifier: nil,
+            previewProvider: previewProvider,
+            actionProvider: actionProvider
+        )
     }
 }

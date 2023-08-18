@@ -37,6 +37,7 @@ class CharactersViewController: MarvelBaseVC {
         title = "Marvel Characters"
         setupCollectionView()
         addMarvelLogoToNavBar()
+        addLanguageButton()
     }
     
     // MARK: - bindUI
