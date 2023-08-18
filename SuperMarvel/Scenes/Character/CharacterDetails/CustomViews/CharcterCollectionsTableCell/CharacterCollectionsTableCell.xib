@@ -110,15 +110,15 @@
                 <outletCollection property="collectionViews" destination="AFN-Qs-aJN" collectionClass="NSMutableArray" id="Uqq-WB-H8b"/>
                 <outletCollection property="collectionViews" destination="L6z-gR-zpQ" collectionClass="NSMutableArray" id="5zq-Ck-87m"/>
                 <outletCollection property="collectionViews" destination="dzJ-BX-I9l" collectionClass="NSMutableArray" id="dbQ-og-HLt"/>
-                <outletCollection property="titleLabels" destination="lU4-9W-9wK" collectionClass="NSMutableArray" id="5I8-v8-FFj"/>
-                <outletCollection property="titleLabels" destination="A3J-v7-uhI" collectionClass="NSMutableArray" id="31O-Ny-SfA"/>
-                <outletCollection property="titleLabels" destination="ujv-3S-MAq" collectionClass="NSMutableArray" id="l3P-Y8-gLN"/>
                 <outletCollection property="stackViews" destination="cRl-29-I76" collectionClass="NSMutableArray" id="Sn1-kp-2xi"/>
                 <outletCollection property="stackViews" destination="Nm1-T0-BtG" collectionClass="NSMutableArray" id="esr-o4-XeJ"/>
                 <outletCollection property="stackViews" destination="zYm-Rc-bmm" collectionClass="NSMutableArray" id="GQM-yE-2Ay"/>
                 <outletCollection property="stackViewsHeight" destination="6iX-IZ-JGJ" collectionClass="NSMutableArray" id="ayK-5k-clx"/>
                 <outletCollection property="stackViewsHeight" destination="cNW-Su-pR0" collectionClass="NSMutableArray" id="mOa-hv-CmA"/>
                 <outletCollection property="stackViewsHeight" destination="DoR-nL-9zy" collectionClass="NSMutableArray" id="nup-qo-LWb"/>
+                <outletCollection property="titleLabels" destination="lU4-9W-9wK" collectionClass="NSMutableArray" id="Tgd-pj-f02"/>
+                <outletCollection property="titleLabels" destination="ujv-3S-MAq" collectionClass="NSMutableArray" id="7Dv-dt-tSZ"/>
+                <outletCollection property="titleLabels" destination="A3J-v7-uhI" collectionClass="NSMutableArray" id="nbI-dI-6XT"/>
             </connections>
             <point key="canvasLocation" x="150.38167938931298" y="5.9859154929577469"/>
         </tableViewCell>
