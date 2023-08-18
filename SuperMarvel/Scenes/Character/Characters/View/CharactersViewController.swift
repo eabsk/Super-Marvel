@@ -42,6 +42,12 @@ class CharactersViewController: MarvelBaseVC {
                 self.charactersCollectionView.reloadData()
             }.store(in: &cancellable)
         
+        viewModel.showErrorMessagePublisher
+            .receive(on: DispatchQueue.main)
+            .sink { errorMessage in
+                ToastManager.shared.showError(message: errorMessage, view: self.view)
+            }.store(in: &cancellable)
+        
         viewModel.isLoadingPublisher
             .receive(on: DispatchQueue.main)
             .sink { isLoading in

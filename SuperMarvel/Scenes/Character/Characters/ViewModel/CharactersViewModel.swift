@@ -5,6 +5,7 @@ protocol CharactersViewModelProtocol {
     var charactersCount: Int { get }
     var totalCharactersCount: Int { get }
     var shouldReloadPublisher: PassthroughSubject<Void, Never> { get }
+    var showErrorMessagePublisher: PassthroughSubject<String, Never> { get }
     var isLoadingPublisher: AnyPublisher<Bool, Never> { get }
     func configure(cell: CharacterCollectionViewCellProtocol, index: Int)
     func didSelectCharacter(index: Int) -> CharacterModel
@@ -20,6 +21,8 @@ class CharactersViewModel {
     private(set) var totalCharactersCount: Int = 0
     var shouldReloadPublisher: PassthroughSubject<Void, Never> = PassthroughSubject()
     
+    var showErrorMessagePublisher: PassthroughSubject<String, Never> = PassthroughSubject()
+
     @Published private var isLoading: Bool = false
     var isLoadingPublisher: AnyPublisher<Bool, Never> {
         $isLoading.eraseToAnyPublisher()
@@ -36,7 +39,8 @@ class CharactersViewModel {
                 self.shouldReloadPublisher.send()
                 self.isLoading = false
             case .failure(let error):
-                debugPrint("Error:\n", error.message)
+                self.isLoading = false
+                self.showErrorMessagePublisher.send(error.message)
             }
         } receiveValue: { response in
             self.totalCharactersCount = response.data?.total ?? 0

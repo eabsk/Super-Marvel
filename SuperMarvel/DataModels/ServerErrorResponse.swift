@@ -16,7 +16,7 @@ enum ServerError: Error {
     var message: String {
         switch self {
         case .network:
-            return "Networking error"
+            return "Connection error"
         case .serialization:
             return  "serialization error"
         case .general:
