@@ -24,6 +24,11 @@ class CharactersViewController: MarvelBaseVC {
     private func setupCollectionView() {
         charactersCollectionView.delegate = self
         charactersCollectionView.dataSource = self
+        charactersCollectionView.refreshControl = refresherController
+        onRefresherControllerReload = { [weak self] in
+            guard let self else { return }
+            self.viewModel.didPullToRefresh()
+        }
         charactersCollectionView.registerNib(cellClass: CharacterCollectionViewCell.self)
     }
     
@@ -40,6 +45,12 @@ class CharactersViewController: MarvelBaseVC {
             .receive(on: DispatchQueue.main)
             .sink { _ in
                 self.charactersCollectionView.reloadData()
+            }.store(in: &cancellable)
+        
+        viewModel.shouldStopRefresherPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+                self.refresherController.endRefreshing()
             }.store(in: &cancellable)
         
         viewModel.showErrorMessagePublisher
