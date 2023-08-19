@@ -9,6 +9,7 @@ class CharactersViewController: MarvelBaseVC {
     // MARK: - Properties
     @IBOutlet weak var charactersCollectionView: UICollectionView!
     private let insetsWidth: CGFloat = Configurations.insetsWidth
+    private var isLoading = true
     
     // MARK: - Variables
     var viewModel: CharactersViewModelProtocol!
@@ -18,6 +19,7 @@ class CharactersViewController: MarvelBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        viewModel.getCharacters()
         bindUI()
     }
     
@@ -42,7 +44,6 @@ class CharactersViewController: MarvelBaseVC {
     
     // MARK: - bindUI
     private func bindUI() {
-        viewModel.getCharacters()
         viewModel.shouldReloadPublisher
             .receive(on: DispatchQueue.main)
             .sink { _ in
@@ -67,12 +68,22 @@ class CharactersViewController: MarvelBaseVC {
                 isLoading ?
                 self.showDefaultLoader() : self.hideDefaultLoader()
             }.store(in: &cancellable)
+        
+        viewModel.isEmptyStatePublisher.receive(on: DispatchQueue.main)
+            .sink { isEmpty in
+                if isEmpty {
+                    self.charactersCollectionView.setEmptyMessage(L10n.NetworkErrorStrings.noDataAvailable())
+                } else {
+                    self.charactersCollectionView.restore()
+                }
+            }.store(in: &cancellable)
     }
     
 }
 
 // MARK: - CollectionView Delegate
 extension CharactersViewController: CollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.charactersCount
     }

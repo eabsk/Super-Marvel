@@ -45,11 +45,13 @@ class MarvelBaseVC: UIViewController {
         guard let iconImage = UIImage(systemName: "globe")
         else { return }
 
-        let spain = UIAction(title: "\(L10n.AppSettingsStr.spanish()) 🇪🇸", image: iconImage, attributes: .destructive) { _ in
+        let spain = UIAction(title: "\(L10n.AppSettingsStr.spanish()) 🇪🇸",
+                             image: iconImage, attributes: .destructive) { _ in
             LocalizeService.shared.setLanguage(.spanish)
         }
         
-        let english = UIAction(title: "\(L10n.AppSettingsStr.english()) 🇬🇧", image: iconImage) { _ in
+        let english = UIAction(title: "\(L10n.AppSettingsStr.english()) 🇬🇧",
+                               image: iconImage) { _ in
             LocalizeService.shared.setLanguage(.english)
         }
         
