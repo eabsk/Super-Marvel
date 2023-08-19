@@ -17,6 +17,9 @@ target 'SuperMarvel' do
     # Networking
     pod 'Moya', '~> 15.0'
     pod 'Kingfisher', '~> 7.0'
+    # Protecting Keys
+    pod "ArkanaKeys", path: "ArkanaKeys/ArkanaKeys"
+    pod "ArkanaKeysInterfaces", path: "ArkanaKeys/ArkanaKeysInterfaces"
 
   target 'SuperMarvelTests' do
     inherit! :search_paths

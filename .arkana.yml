@@ -1,0 +1,15 @@
+import_name: ArkanaKeys
+namespace: Keys
+package_manager: cocoapods
+
+environments:
+  - Debug
+  - Release
+
+global_secrets:
+  - MarvelPublicKey
+  - MarvelPrivateKey
+  - MarvelHashKey
+  - MarvelTimeStamp
+
+environment_secrets:
