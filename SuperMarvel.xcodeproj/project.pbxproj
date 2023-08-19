@@ -59,6 +59,8 @@
 		A27FB5B72A8D02240085F188 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5B32A8D02240085F188 /* CharactersViewController.swift */; };
 		A27FB5BA2A8D6E840085F188 /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5B92A8D6E840085F188 /* CharacterMapper.swift */; };
 		A27FB5BC2A8D6F920085F188 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5BB2A8D6F920085F188 /* CharacterModel.swift */; };
+		A29266672A916C94002F4917 /* Info-development.plist in Resources */ = {isa = PBXBuildFile; fileRef = A29266652A916C94002F4917 /* Info-development.plist */; };
+		A29266682A916C94002F4917 /* Info-staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = A29266662A916C94002F4917 /* Info-staging.plist */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
 		A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */; };
@@ -100,8 +102,17 @@
 
 /* Begin PBXFileReference section */
 		192AFA2A913943C4EB4C3B8E /* Pods_SuperMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1988C5388D42061A6D7447ED /* Pods-SuperMarvelTests.release stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.release stage.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.release stage.xcconfig"; sourceTree = "<group>"; };
+		315FFC367F139D0415012C02 /* Pods-SuperMarvel-SuperMarvelUITests.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.release dev.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.release dev.xcconfig"; sourceTree = "<group>"; };
+		3E567755607A6AEEB1C2113E /* Pods-SuperMarvel-SuperMarvelUITests.release stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.release stage.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.release stage.xcconfig"; sourceTree = "<group>"; };
+		4A0A1A98A0554DBD9EDCA4E8 /* Pods-SuperMarvel.debug stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.debug stage.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.debug stage.xcconfig"; sourceTree = "<group>"; };
+		5FCCB7A5D947AFA332CA31D9 /* Pods-SuperMarvel.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.release dev.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.release dev.xcconfig"; sourceTree = "<group>"; };
+		65D4C2A569A88E9C0E3C7A62 /* Pods-SuperMarvel-SuperMarvelUITests.debug stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.debug stage.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.debug stage.xcconfig"; sourceTree = "<group>"; };
 		7FBAEF6BCE2692D6E64879E2 /* Pods-SuperMarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AACA98F9D51A5826B1B8FB5 /* Pods-SuperMarvelTests.debug stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.debug stage.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.debug stage.xcconfig"; sourceTree = "<group>"; };
 		9416A8967997C4ED2D40C2D8 /* Pods-SuperMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.release.xcconfig"; sourceTree = "<group>"; };
+		9C43F8E9FFCB151A6BBD667F /* Pods-SuperMarvel-SuperMarvelUITests.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.debug dev.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.debug dev.xcconfig"; sourceTree = "<group>"; };
+		9F826458BD6989292F443C65 /* Pods-SuperMarvelTests.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.debug dev.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.debug dev.xcconfig"; sourceTree = "<group>"; };
 		A2566CC52A8D8A130000DF8B /* UICollectionView+ Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ Ex.swift"; sourceTree = "<group>"; };
 		A2566CC92A8D8C1A0000DF8B /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2566CCA2A8D8C1A0000DF8B /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -151,6 +162,11 @@
 		A27FB5B32A8D02240085F188 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		A27FB5B92A8D6E840085F188 /* CharacterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
 		A27FB5BB2A8D6F920085F188 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		A292665E2A914E78002F4917 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		A292665F2A914EDC002F4917 /* STAGE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STAGE.xcconfig; sourceTree = "<group>"; };
+		A29266622A914F1C002F4917 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
+		A29266652A916C94002F4917 /* Info-development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-development.plist"; sourceTree = "<group>"; };
+		A29266662A916C94002F4917 /* Info-staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-staging.plist"; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,7 +197,10 @@
 		A2E2203C2A8F30D700A371F2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/CharacterStr.strings; sourceTree = "<group>"; };
 		A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.release.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1C15B5BE0F029726FCAE47A /* Pods-SuperMarvel.release stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.release stage.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.release stage.xcconfig"; sourceTree = "<group>"; };
+		B3EC80C6EF7CDC5882BFCC22 /* Pods-SuperMarvel.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.debug dev.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.debug dev.xcconfig"; sourceTree = "<group>"; };
 		BCBC6F4695562F811440E368 /* Pods-SuperMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel/Pods-SuperMarvel.debug.xcconfig"; sourceTree = "<group>"; };
+		E0E55EF0A1B70C8A0CD1C4A5 /* Pods-SuperMarvelTests.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvelTests.release dev.xcconfig"; path = "Target Support Files/Pods-SuperMarvelTests/Pods-SuperMarvelTests.release dev.xcconfig"; sourceTree = "<group>"; };
 		E4095B300CF441334CA22A0F /* Pods_SuperMarvel_SuperMarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvel_SuperMarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E767412EEB5CB6381CF208B1 /* Pods_SuperMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95216DCD13E60D1B78EA699 /* Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuperMarvel-SuperMarvelUITests/Pods-SuperMarvel-SuperMarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +243,18 @@
 				A6BB79945DE41BDEFCC48A21 /* Pods-SuperMarvel-SuperMarvelUITests.release.xcconfig */,
 				7FBAEF6BCE2692D6E64879E2 /* Pods-SuperMarvelTests.debug.xcconfig */,
 				B190C296EA4E324DFF02716C /* Pods-SuperMarvelTests.release.xcconfig */,
+				4A0A1A98A0554DBD9EDCA4E8 /* Pods-SuperMarvel.debug stage.xcconfig */,
+				B3EC80C6EF7CDC5882BFCC22 /* Pods-SuperMarvel.debug dev.xcconfig */,
+				B1C15B5BE0F029726FCAE47A /* Pods-SuperMarvel.release stage.xcconfig */,
+				5FCCB7A5D947AFA332CA31D9 /* Pods-SuperMarvel.release dev.xcconfig */,
+				65D4C2A569A88E9C0E3C7A62 /* Pods-SuperMarvel-SuperMarvelUITests.debug stage.xcconfig */,
+				9C43F8E9FFCB151A6BBD667F /* Pods-SuperMarvel-SuperMarvelUITests.debug dev.xcconfig */,
+				3E567755607A6AEEB1C2113E /* Pods-SuperMarvel-SuperMarvelUITests.release stage.xcconfig */,
+				315FFC367F139D0415012C02 /* Pods-SuperMarvel-SuperMarvelUITests.release dev.xcconfig */,
+				8AACA98F9D51A5826B1B8FB5 /* Pods-SuperMarvelTests.debug stage.xcconfig */,
+				9F826458BD6989292F443C65 /* Pods-SuperMarvelTests.debug dev.xcconfig */,
+				1988C5388D42061A6D7447ED /* Pods-SuperMarvelTests.release stage.xcconfig */,
+				E0E55EF0A1B70C8A0CD1C4A5 /* Pods-SuperMarvelTests.release dev.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -534,6 +565,40 @@
 			path = Mappers;
 			sourceTree = "<group>";
 		};
+		A29266572A914D99002F4917 /* AppSchems */ = {
+			isa = PBXGroup;
+			children = (
+				A29266592A914DCE002F4917 /* DEV */,
+				A292665A2A914DD3002F4917 /* STAGE */,
+				A292665B2A914DDB002F4917 /* PROD */,
+			);
+			path = AppSchems;
+			sourceTree = "<group>";
+		};
+		A29266592A914DCE002F4917 /* DEV */ = {
+			isa = PBXGroup;
+			children = (
+				A292665E2A914E78002F4917 /* DEV.xcconfig */,
+			);
+			path = DEV;
+			sourceTree = "<group>";
+		};
+		A292665A2A914DD3002F4917 /* STAGE */ = {
+			isa = PBXGroup;
+			children = (
+				A292665F2A914EDC002F4917 /* STAGE.xcconfig */,
+			);
+			path = STAGE;
+			sourceTree = "<group>";
+		};
+		A292665B2A914DDB002F4917 /* PROD */ = {
+			isa = PBXGroup;
+			children = (
+				A29266622A914F1C002F4917 /* PROD.xcconfig */,
+			);
+			path = PROD;
+			sourceTree = "<group>";
+		};
 		A2D7DFE22A881A1D00E7BA04 = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +624,7 @@
 		A2D7DFED2A881A1D00E7BA04 /* SuperMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				A29266572A914D99002F4917 /* AppSchems */,
 				A2D7E0552A88650E00E7BA04 /* Core */,
 				A27FB55B2A8C118F0085F188 /* DataModels */,
 				A27FB5582A8B829B0085F188 /* Networking */,
@@ -679,6 +745,8 @@
 		A2D7E05A2A88659300E7BA04 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A29266652A916C94002F4917 /* Info-development.plist */,
+				A29266662A916C94002F4917 /* Info-staging.plist */,
 				A2D7DFFC2A881A2000E7BA04 /* Info.plist */,
 			);
 			path = SupportFiles;
@@ -828,6 +896,7 @@
 				A2E220392A8F30D300A371F2 /* CharacterStr.strings in Resources */,
 				A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */,
 				A2E220332A8F2F6000A371F2 /* AppSettingsStr.strings in Resources */,
+				A29266672A916C94002F4917 /* Info-development.plist in Resources */,
 				A2566CF02A8EB6570000DF8B /* CharacterDescriptionTableCell.xib in Resources */,
 				A27FB5962A8C3E580085F188 /* SplashViewController.xib in Resources */,
 				A2D7E0272A884C6500E7BA04 /* NetworkErrorStrings.strings in Resources */,
@@ -837,6 +906,7 @@
 				A2566CEB2A8EADD30000DF8B /* CharacterHeaderCellView.xib in Resources */,
 				A2566CFA2A8EC6F10000DF8B /* TagCollectionViewCell.xib in Resources */,
 				A2D7E0232A884BC500E7BA04 /* ColorAssets.xcassets in Resources */,
+				A29266682A916C94002F4917 /* Info-staging.plist in Resources */,
 				A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1129,8 +1199,541 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A29266472A91481D002F4917 /* Debug DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A292665E2A914E78002F4917 /* DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug DEV";
+		};
+		A29266482A91481D002F4917 /* Debug DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EC80C6EF7CDC5882BFCC22 /* Pods-SuperMarvel.debug dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SuperMarvel/SupportFiles/Info-development.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://dev.gateway.marvel.com";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug DEV";
+		};
+		A29266492A91481D002F4917 /* Debug DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F826458BD6989292F443C65 /* Pods-SuperMarvelTests.debug dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMarvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuperMarvel";
+			};
+			name = "Debug DEV";
+		};
+		A292664A2A91481D002F4917 /* Debug DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C43F8E9FFCB151A6BBD667F /* Pods-SuperMarvel-SuperMarvelUITests.debug dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperMarvel;
+			};
+			name = "Debug DEV";
+		};
+		A292664B2A91482A002F4917 /* Debug STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A292665F2A914EDC002F4917 /* STAGE.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug STAGE";
+		};
+		A292664C2A91482A002F4917 /* Debug STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A0A1A98A0554DBD9EDCA4E8 /* Pods-SuperMarvel.debug stage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SuperMarvel/SupportFiles/Info-staging.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://stage.gateway.marvel.com";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STAGE";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug STAGE";
+		};
+		A292664D2A91482A002F4917 /* Debug STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AACA98F9D51A5826B1B8FB5 /* Pods-SuperMarvelTests.debug stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMarvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuperMarvel";
+			};
+			name = "Debug STAGE";
+		};
+		A292664E2A91482A002F4917 /* Debug STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D4C2A569A88E9C0E3C7A62 /* Pods-SuperMarvel-SuperMarvelUITests.debug stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperMarvel;
+			};
+			name = "Debug STAGE";
+		};
+		A292664F2A914856002F4917 /* Release DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A292665E2A914E78002F4917 /* DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release DEV";
+		};
+		A29266502A914856002F4917 /* Release DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCCB7A5D947AFA332CA31D9 /* Pods-SuperMarvel.release dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SuperMarvel/SupportFiles/Info-development.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://dev.gateway.marvel.com";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release DEV";
+		};
+		A29266512A914856002F4917 /* Release DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E55EF0A1B70C8A0CD1C4A5 /* Pods-SuperMarvelTests.release dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMarvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuperMarvel";
+			};
+			name = "Release DEV";
+		};
+		A29266522A914856002F4917 /* Release DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315FFC367F139D0415012C02 /* Pods-SuperMarvel-SuperMarvelUITests.release dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperMarvel;
+			};
+			name = "Release DEV";
+		};
+		A29266532A91485F002F4917 /* Release STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A292665F2A914EDC002F4917 /* STAGE.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release STAGE";
+		};
+		A29266542A91485F002F4917 /* Release STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C15B5BE0F029726FCAE47A /* Pods-SuperMarvel.release stage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SuperMarvel/SupportFiles/Info-staging.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://stage.gateway.marvel.com";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGE;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release STAGE";
+		};
+		A29266552A91485F002F4917 /* Release STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1988C5388D42061A6D7447ED /* Pods-SuperMarvelTests.release stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMarvel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SuperMarvel";
+			};
+			name = "Release STAGE";
+		};
+		A29266562A91485F002F4917 /* Release STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E567755607A6AEEB1C2113E /* Pods-SuperMarvel-SuperMarvelUITests.release stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4YGDY6JXA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperMarvel;
+			};
+			name = "Release STAGE";
+		};
 		A2D7E0132A881A2100E7BA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29266622A914F1C002F4917 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1192,6 +1795,7 @@
 		};
 		A2D7E0142A881A2100E7BA04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29266622A914F1C002F4917 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1256,7 +1860,7 @@
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuperMarvel/SupportFiles/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Marvel;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -1271,6 +1875,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://gateway.marvel.com";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1288,7 +1893,7 @@
 				DEVELOPMENT_TEAM = P4YGDY6JXA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuperMarvel/SupportFiles/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Marvel;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -1303,6 +1908,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brightskiesinc.SuperMarvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "http://gateway.marvel.com";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1396,7 +2003,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E0132A881A2100E7BA04 /* Debug */,
+				A292664B2A91482A002F4917 /* Debug STAGE */,
+				A29266472A91481D002F4917 /* Debug DEV */,
 				A2D7E0142A881A2100E7BA04 /* Release */,
+				A29266532A91485F002F4917 /* Release STAGE */,
+				A292664F2A914856002F4917 /* Release DEV */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1405,7 +2016,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E0162A881A2100E7BA04 /* Debug */,
+				A292664C2A91482A002F4917 /* Debug STAGE */,
+				A29266482A91481D002F4917 /* Debug DEV */,
 				A2D7E0172A881A2100E7BA04 /* Release */,
+				A29266542A91485F002F4917 /* Release STAGE */,
+				A29266502A914856002F4917 /* Release DEV */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1414,7 +2029,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E0192A881A2100E7BA04 /* Debug */,
+				A292664D2A91482A002F4917 /* Debug STAGE */,
+				A29266492A91481D002F4917 /* Debug DEV */,
 				A2D7E01A2A881A2100E7BA04 /* Release */,
+				A29266552A91485F002F4917 /* Release STAGE */,
+				A29266512A914856002F4917 /* Release DEV */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1423,7 +2042,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2D7E01C2A881A2100E7BA04 /* Debug */,
+				A292664E2A91482A002F4917 /* Debug STAGE */,
+				A292664A2A91481D002F4917 /* Debug DEV */,
 				A2D7E01D2A881A2100E7BA04 /* Release */,
+				A29266562A91485F002F4917 /* Release STAGE */,
+				A29266522A914856002F4917 /* Release DEV */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
