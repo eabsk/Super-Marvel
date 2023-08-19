@@ -1,0 +1,13 @@
+//
+//  DEV.xcconfig
+//  SuperMarvel
+//
+//  Created by Eslam Abdelmaqsoud on 19/08/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ENVIRONMENT = DEV
+APP_NAME = SuperMarvel(D)
+SERVER_URL = http://dev.gateway.marvel.com

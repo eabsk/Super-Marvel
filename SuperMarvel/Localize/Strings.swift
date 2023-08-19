@@ -17,6 +17,12 @@ public enum L10n {
     /// Spanish
     public static let spanish = { L10n.tr("AppSettingsStr", "Spanish") }
   }
+  public enum AppSettingsStr2 {
+    /// English
+    public static let english = { L10n.tr("AppSettingsStr 2", "English") }
+    /// Spanish
+    public static let spanish = { L10n.tr("AppSettingsStr 2", "Spanish") }
+  }
   public enum CharacterStr {
     /// Comics
     public static let comics = { L10n.tr("CharacterStr", "Comics") }
@@ -26,6 +32,16 @@ public enum L10n {
     public static let series = { L10n.tr("CharacterStr", "Series") }
     /// Stories
     public static let stories = { L10n.tr("CharacterStr", "Stories") }
+  }
+  public enum CharacterStr2 {
+    /// Comics
+    public static let comics = { L10n.tr("CharacterStr 2", "Comics") }
+    /// Marvel Characters
+    public static let marvelCharacters = { L10n.tr("CharacterStr 2", "Marvel Characters") }
+    /// Series
+    public static let series = { L10n.tr("CharacterStr 2", "Series") }
+    /// Stories
+    public static let stories = { L10n.tr("CharacterStr 2", "Stories") }
   }
   public enum NetworkErrorStrings {
     /// Connection error
