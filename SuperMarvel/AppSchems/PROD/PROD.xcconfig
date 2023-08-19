@@ -1,0 +1,13 @@
+//
+//  PROD.xcconfig
+//  SuperMarvel
+//
+//  Created by Eslam Abdelmaqsoud on 19/08/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ENVIRONMENT = PROD
+APP_NAME = SuperMarvel(P)
+SERVER_URL = http://gateway.marvel.com

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SERVER_URL</key>
+	<string>$(SERVER_URL)</string>
 	<key>Environment</key>
 	<string>$(ENVIRONMENT)</string>
 	<key>NSAppTransportSecurity</key>
@@ -9,7 +11,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>SERVER_URL</key>
-	<string>$(SERVER_URL)</string>
 </dict>
 </plist>

@@ -13,7 +13,7 @@ extension TargetType {
     
     var baseURL: URL {
         
-        guard let url = URL(string: URLs.baseURL)
+        guard let url = URL(string: URLs.versionPath)
         else { fatalError("invalid url") }
         return url
     }
