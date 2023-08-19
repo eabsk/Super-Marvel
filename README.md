@@ -1,3 +1,4 @@
+# Super-Marvel
 <p align="center">
     <img src="https://1000logos.net/wp-content/uploads/2021/06/Marvel-Comics-logo.png" alt="Logo" width=250 height=250>
 </p>
@@ -40,12 +41,7 @@ This app is created as a personal project to showcase my skills and passion for 
 
 ## Screenshots
 
- <img src="https://imgur.com/66LPhdU.png" alt="Dark Splash" height=350>
-  &nbsp; <img src="https://imgur.com/x2GpoJc.png" alt="Light Splash"  height=350>
- <img src="https://imgur.com/WWnoPKD.png" alt="Light Home"  height=350>
-  &nbsp; <img src="https://imgur.com/hDhmPKy.png" alt="Dark Home"  height=350>
-<img src="https://imgur.com/L6av6tp.png" alt="Dark Character Profile"  height=350>
-  &nbsp; <img src="https://imgur.com/e290qe6.png" alt="Light Character Profile"  height=350>
+<img src="https://imgur.com/x2GpoJc.png" alt="Light Splash"  height=350>  &nbsp; <img src="https://imgur.com/WWnoPKD.png" alt="Light Home" height=350> &nbsp; <img src="https://imgur.com/hDhmPKy.png" alt="Dark Home"  height=350> &nbsp; <img src="https://imgur.com/L6av6tp.png" alt="Dark Character Profile" height=350> &nbsp; <img src="https://imgur.com/e290qe6.png" alt="Light Character Profile"  height=350>
 
 ## Quick start
 As this project uses the Marvel API, you need to get your own API keys to run the project. You can
