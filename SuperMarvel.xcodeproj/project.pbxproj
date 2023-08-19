@@ -1265,7 +1265,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3EC80C6EF7CDC5882BFCC22 /* Pods-SuperMarvel.debug dev.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=*]" = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1401,7 +1402,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A0A1A98A0554DBD9EDCA4E8 /* Pods-SuperMarvel.debug stage.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1531,7 +1532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5FCCB7A5D947AFA332CA31D9 /* Pods-SuperMarvel.release dev.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1661,7 +1662,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1C15B5BE0F029726FCAE47A /* Pods-SuperMarvel.release stage.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
