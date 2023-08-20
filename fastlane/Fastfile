@@ -1,0 +1,64 @@
+default_platform(:ios)
+
+platform :ios do
+   API_KEY = app_store_connect_api_key(
+      key_id: "X0x0x0x",
+      issuer_id: "0x0x0x0-00xx-0x0x-x0x0-0x0x0x0x0",
+      key_filepath: "./AuthKey_X0x0x0x.p8"
+    )
+
+  desc "install app certificates"
+  lane :install_certificates do
+    match(type: "appstore", app_identifier: "com.app.SuperMarvel")
+  end
+  
+  desc "increment build number"
+  lane :auto_increment_build_number do
+    build_number = latest_testflight_build_number(version: "1.0", api_key: API_KEY)
+    increment_build_number({
+    build_number: build_number + 1
+    })
+  end
+
+  # upload to testflight 🚀
+  desc "launch build on testflight"
+  lane :pilot_testflight do
+    upload_to_testflight(api_key: API_KEY,
+                         skip_submission: true,
+                         skip_waiting_for_build_processing: true)
+  end
+
+  desc "upload marvel-development-app"
+  lane :upload_marvel_development do
+    auto_increment_build_number
+    cocoapods(clean_install: true)
+    install_certificates
+    gym(scheme: "Development",
+        clean: true,
+        output_directory: "./")
+    pilot_testflight
+  end
+
+  desc "upload marvel-staging-app"
+  lane :upload_marvel_staging do
+    auto_increment_build_number
+    cocoapods(clean_install: true)
+    install_certificates
+    gym(scheme: "Staging",
+        clean: true,
+        output_directory: "./")
+    pilot_testflight
+  end
+
+  desc "upload marvel-production-app"
+  lane :upload_marvel_production do
+    auto_increment_build_number
+    cocoapods(clean_install: true)
+    install_certificates
+    gym(scheme: "Production",
+        clean: true,
+        output_directory: "./")
+    pilot_testflight
+  end
+
+end
