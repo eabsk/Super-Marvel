@@ -3,6 +3,7 @@
 </p>
   <h1 align="center">Super-Marvel 🚀</h1> 
   <p align="center">
+<a href="https://www.youtube.com/watch?v=OKXaDq307LM" rel="nofollow"><img src="https://camo.githubusercontent.com/082ddbfd956a5dd61cf444a43be80704940726d6f5eec80f8e0d894348d26219/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030303f7374796c653d666c6174266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/youtube-%23FF0000?style=flat&amp;logo=youtube&amp;logoColor=white" style="max-height: 100%;"></a>
 <a href="https://github.com/eabsk/Super-Marvel/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
 alt="License: MIT" />
@@ -21,6 +22,7 @@ This app is created as a personal project to showcase my skills and passion for 
 </p>
 
 <!-- TOC -->
+  * [Video](https://www.youtube.com/watch?v=OKXaDq307LM)
   * [Screenshots](#screenshots)
   * [Setup](#setup)
   * [Marvel APIs](#marvel-apis)
