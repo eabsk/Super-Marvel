@@ -137,7 +137,7 @@ get them by following these steps:
 | [Mockingbird](https://github.com/birdrides/mockingbird)                                               | Generating mock, stub, and verify objects in Swift unit tests        |
 
 ## Upcoming Features
-* Integrate with **Fastlane**
+* Integrate with **Fastlane** with **Bitrise**
 * CI/CD using [GitHub Actions](https://docs.github.com/en/actions) & [Bitrise](https://bitrise.io)
 * UI Testing
 * Integrate with [Sentry](https://sentry.io) [codecov](https://about.codecov.io)
