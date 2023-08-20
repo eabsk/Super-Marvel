@@ -37,31 +37,35 @@ This app is created as a personal project to showcase my skills and passion for 
 <img src="https://imgur.com/x2GpoJc.png" alt="Light Splash"  height=350>  &nbsp; <img src="https://imgur.com/WWnoPKD.png" alt="Light Home" height=350> &nbsp; <img src="https://imgur.com/hDhmPKy.png" alt="Dark Home"  height=350> &nbsp; <img src="https://imgur.com/L6av6tp.png" alt="Dark Character Profile" height=350> &nbsp; <img src="https://imgur.com/e290qe6.png" alt="Light Character Profile"  height=350>
 
 ## Setup
+It's recommended that all team members working have the same project setup in order to avoid any version conflicts and to avoid inconvenience issues.
+so please everyone, follow the following steps to make sure you have the appropriate setup for the project.
+
 1. **Ruby**
    If you use macOS, system Ruby is not recommended. There is a variety of ways to install Ruby without having to modify your system    environment. For macOS and Linux, [**rbenv**](https://github.com/rbenv/rbenv) is one of the most popular ways to manage your Ruby    environment. It's recommended to install [**rbenv**](https://github.com/rbenv/rbenv) via [**HomeBrew**](https://brew.sh).
  Install Ruby 2.7.6 by running:
     ```shell
-       $ rbenv install 2.7.6
+    rbenv install 2.7.6
     ```
    the app supports Ruby versions 2.7.6 or newer. Verify which Ruby version you're using:
     ```shell
-        $ ruby --version
-        => ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin19]
+    ruby --version
+    result for example-> $ ruby 2.7.6p137 (2022-02-01 revision 5445e04352) [x86_64-darwin19]
     ```
 
 3. **Bundler**
    It is recommended that you use [**Bundler**](http://bundler.io) and Gemfile to define the dependency of the app.
    <br>Install Bundler by running:
     ```shell
-       $ gem install bundler
+    gem install bundler
     ```
-4. Install Gems <br>Install gems by running:
+4. Install Ruby Gems **in the project directory**  <br>Install gems by running:
     ```shell
-       $ bundle install
+    bundle install
     ```
-5. Cocoapods Installing <br> Install cocoapods by running:
+    try to restart the terminal and open it in the project directory again if you can't install the gems
+5. Cocoapods Installing <br> Install Cocoapods **in the project directory** by running:
     ```shell
-       $ bundle exec pod install
+    bundle exec pod install
     ```
 6. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (On-Progress)
 
