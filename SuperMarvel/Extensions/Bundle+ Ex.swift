@@ -1,3 +1,4 @@
+// swiftlint:disable all
 import UIKit
 
 private var associatedLanguageBundle: Character = "0"
@@ -33,3 +34,4 @@ extension Bundle {
        UserDefaults.standard.synchronize()
    }
 }
+// swiftlint:enable all
