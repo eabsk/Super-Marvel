@@ -404,9 +404,10 @@
 		A27FB55B2A8C118F0085F188 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				A27FB5B82A8D6E5F0085F188 /* Mappers */,
+				A27FB5712A8C21350085F188 /* Character */,
 				A27FB55C2A8C11A60085F188 /* BaseResponseModel.swift */,
 				A27FB5622A8C14F90085F188 /* ServerErrorResponse.swift */,
-				A27FB5712A8C21350085F188 /* Character */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -631,7 +632,6 @@
 				A27FB5692A8C18DF0085F188 /* APIs */,
 				A27FB56C2A8C1F3A0085F188 /* Requests */,
 				A27FB59E2A8D002F0085F188 /* Repositories */,
-				A27FB5B82A8D6E5F0085F188 /* Mappers */,
 				A2D7E0562A88652100E7BA04 /* Base */,
 				A27FB5742A8C2C6B0085F188 /* Coordinators */,
 				A27FB5862A8C3DDE0085F188 /* Scenes */,
