@@ -20,11 +20,10 @@ This app is created as a personal project to showcase my skills and passion for 
 <br>
 </p>
 
-
 <!-- TOC -->
   * [Screenshots](#screenshots)
   * [Setup](#setup)
-  * [Quick start](#quick-start)
+  * [Marvel APIs](#marvel-apis)
   * [Folder Structure](#folder-structure)
   * [Tools & Frameworks Used](#tools--frameworks-used)
   * [Upcoming Features](#upcoming-features)
@@ -33,7 +32,6 @@ This app is created as a personal project to showcase my skills and passion for 
 <!-- TOC -->
 
 ## Screenshots
-
 <img src="https://imgur.com/x2GpoJc.png" alt="Light Splash"  height=350>  &nbsp; <img src="https://imgur.com/WWnoPKD.png" alt="Light Home" height=350> &nbsp; <img src="https://imgur.com/hDhmPKy.png" alt="Dark Home"  height=350> &nbsp; <img src="https://imgur.com/L6av6tp.png" alt="Dark Character Profile" height=350> &nbsp; <img src="https://imgur.com/e290qe6.png" alt="Light Character Profile"  height=350>
 
 ## Setup
@@ -63,20 +61,8 @@ so please everyone, follow the following steps to make sure you have the appropr
     bundle install
     ```
     `Note: Try to restart the terminal and open it in the project directory again if you can't install the gems`
-6. Cocoapods Installing `in the project directory` by running:
-    ```shell
-    bundle exec pod install
-    ```
-7. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (On-Progress)
-
-## Quick start
-As this project uses the Marvel API, you need to get your own API keys to run the project. You can
-get them by following these steps:
-
-1. Go to the [Marvel Developer Portal](https://developer.marvel.com/) and create an account.
-2. Once you have an account, go to the [Get a Key](https://developer.marvel.com/account) page and
-   get your public and private keys.
-3. Create a file called `.env` in the root directory of the project and add the following lines to
+5. [Arkana](https://github.com/rogerluan/arkana) Environment file<br>
+   Create a file called `.env` in the root directory of the project and add the following lines to
    it:
     ```shell
     MarvelPrivateKey=your_private_key
@@ -84,12 +70,28 @@ get them by following these steps:
     MarvelHashKey=make_hash_by_MD5
     MarvelTimeStamp=current_time_stamp
     ```
-4. Run the following command to generate the [ArkanaKeys](https://github.com/rogerluan/arkana) local
+    `To get your own keys, look at` [Marvel APIs](#marvel-apis) to start using **Marvel APIs** Keys.
+   
+6. Run the following command to generate the [ArkanaKeys](https://github.com/rogerluan/arkana) local
    package that will be used to securely
    fetch your keys in runtime:
     ```shell
     bin/arkana
+    ``` 
+
+7. Cocoapods Installation `in the project directory` by running:
+    ```shell
+    bundle exec pod install
     ```
+8. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (Configured)
+
+## Marvel APIs
+As this project uses the Marvel API, you need to get your own API keys to run the project. You can
+get them by following these steps:
+
+1. Go to the [Marvel Developer Portal](https://developer.marvel.com/) and create an account.
+2. Once you have an account, go to the [Get a Key](https://developer.marvel.com/account) page and
+   get your public and private keys.
 
 ## Folder Structure
 
