@@ -1,0 +1,8 @@
+git_url("git@github.com:username/your-repo-certificates.git")
+
+storage_mode("git")
+
+type("appstore") # The default type, can be: appstore, adhoc, enterprise or development
+readonly(true)
+app_identifier(["com.app.SuperMarvel"])
+username("xxxxx@gmail.com")
