@@ -1,11 +1,8 @@
-# Super-Marvel
 <p align="center">
-    <img src="https://1000logos.net/wp-content/uploads/2021/06/Marvel-Comics-logo.png" alt="Logo" width=250 height=250>
+    <img src="https://1000logos.net/wp-content/uploads/2021/06/Marvel-Comics-logo.png" alt="Logo" width=400 height=200>
 </p>
-
-  <h1 align="center">Super-Marvel 🚀</h1>
-
-<p align="center">
+  <h1 align="center">Super-Marvel 🚀</h1> 
+  <p align="center">
 <a href="https://github.com/eabsk/Super-Marvel/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
 alt="License: MIT" />
@@ -28,8 +25,7 @@ This app is created as a personal project to showcase my skills and passion for 
   * [Screenshots](#screenshots)
   * [Setup](#setup)
   * [Quick start](#quick-start)
-  * [Project Structure](#project-structure)
-    * [Folder Structure](#folder-structure)
+  * [Folder Structure](#folder-structure)
   * [Tools & Frameworks Used](#tools--frameworks-used)
   * [Development Environment](#development-environment)
   * [CI Pipeline](#ci-pipeline)
@@ -67,6 +63,7 @@ This app is created as a personal project to showcase my skills and passion for 
     ```shell
        $ bundle exec pod install
     ```
+6. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (On-Progress)
 
 ## Quick start
 As this project uses the Marvel API, you need to get your own API keys to run the project. You can
@@ -90,14 +87,71 @@ get them by following these steps:
     bin/arkana
     ```
 
+### Folder Structure
+
+```markdown
+📦SuperMarvel
+┣ 📂AppSchems
+┣ 📂Core
+┃ 📂Extensions
+┣ 📂DataModels
+┃ ┣ 📂Mappers
+┃ ┣ 📂Character
+┣ 📂Networking
+┣ 📂APIs
+┣ 📂Requests
+┃ 📂Repositories
+┣ 📂Base
+┃ ┣ 📂Config
+┃ ┣ 📂Wrappers
+┃ ┣ 📂TypeAlias
+┃ ┣ 📂Services
+┃ ┗ 📂Observers
+┣ 📂Coordinators
+┃ ┣ 📂Base
+┣ 📂Scenes
+┃ ┣ 📂Splash
+┃ ┣ 📂Character
+┃ ┃ ┃ ┣ 📂Characters
+┃ ┃ ┃ ┗ 📂CharacterDetails
+┣ 📂Extensions
+┣ 📂Localize
+┣ 📂Assets
+┣ 📂Helpers
+┃ ┣ 📂Toast
+┣ 📂SupportFiles
+┗ 📜SuperMarvelApp.swift => The app entry point.
+```
+
+## Tools & Frameworks Used
+
+| Tool                                                                                                  | Used for                                                             |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [SwifGen](https://github.com/SwiftGen/SwiftGen)                                                       | tool to automatically generate Swift code for resources of your projects                                                 |
+| [Arkana](https://github.com/rogerluan/arkana)                                                         | Securely storing secrets and keys                                    |
+| [Kingfisher](https://github.com/onevcat/Kingfisher)                                                                  | Image Loading & Caching                                              |
+| [SwiftLint](https://github.com/realm/SwiftLint)                                                       | Code Linting                                                         |
+| [Moya](https://github.com/Moya/Moya)                                                       | Networking Layer tool                                               |
+| [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)                                                       | collection of awesome loading animationsg                                                         |
+| [L10-Swift](https://github.com/Decybel07/L10n-swift)                                                       | improves localization in swift app, providing cleaner syntax and in-app language switching.                                                         |
+| [Mockingbird](https://github.com/birdrides/mockingbird)                                               | Generating mock, stub, and verify objects in Swift unit tests        |
+
+## Upcoming Features
+* Integrate with **Fastlane**
+* CI/CD using [GitHub Actions](https://docs.github.com/en/actions) & [Bitrise](https://bitrise.io)
+* UI Testing
+* Integrate with [Sentry](https://sentry.io) [codecov](https://about.codecov.io)
+
 ## Development Environment
+
+![Swift Badge](https://img.shields.io/badge/MADE%20WITH-SWIFT-red?style=for-the-badge&logo=swift)
 
 * Xcode 14.3.1
 * Swift 5.8
 * iOS Deployment Target 13.0
 * Ruby Version 2.7.6
 * Coocapods 1.12.1
-
+  
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
