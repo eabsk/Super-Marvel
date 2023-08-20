@@ -49,8 +49,8 @@ so please everyone, follow the following steps to make sure you have the appropr
    the app supports Ruby versions 2.7.6 or newer. Verify which Ruby version you're using:
     ```shell
     ruby --version
-    result for example-> $ ruby 2.7.6p137 (2022-02-01 revision 5445e04352) [x86_64-darwin19]
     ```
+    result for example-> $ ruby 2.7.6p137 (2022-02-01 revision 5445e04352) [x86_64-darwin19]
 
 3. **Bundler**
    It is recommended that you use [**Bundler**](http://bundler.io) and Gemfile to define the dependency of the app.
@@ -58,16 +58,16 @@ so please everyone, follow the following steps to make sure you have the appropr
     ```shell
     gem install bundler
     ```
-4. Install Ruby Gems **in the project directory**  <br>Install gems by running:
+4. Install Ruby Gems `in the project directory` by running:
     ```shell
     bundle install
     ```
-    try to restart the terminal and open it in the project directory again if you can't install the gems
-5. Cocoapods Installing <br> Install Cocoapods **in the project directory** by running:
+    `Note: Try to restart the terminal and open it in the project directory again if you can't install the gems`
+6. Cocoapods Installing `in the project directory` by running:
     ```shell
     bundle exec pod install
     ```
-6. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (On-Progress)
+7. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (On-Progress)
 
 ## Quick start
 As this project uses the Marvel API, you need to get your own API keys to run the project. You can
@@ -91,7 +91,7 @@ get them by following these steps:
     bin/arkana
     ```
 
-### Folder Structure
+## Folder Structure
 
 ```markdown
 📦SuperMarvel
