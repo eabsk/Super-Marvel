@@ -132,7 +132,7 @@ get them by following these steps:
 | [Kingfisher](https://github.com/onevcat/Kingfisher)                                                                  | Image Loading & Caching                                              |
 | [SwiftLint](https://github.com/realm/SwiftLint)                                                       | Code Linting                                                         |
 | [Moya](https://github.com/Moya/Moya)                                                       | Networking Layer tool                                               |
-| [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)                                                       | collection of awesome loading animationsg                                                         |
+| [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)                                                       | collection of awesome loading animations                                                         |
 | [L10-Swift](https://github.com/Decybel07/L10n-swift)                                                       | improves localization in swift app, providing cleaner syntax and in-app language switching.                                                         |
 | [Mockingbird](https://github.com/birdrides/mockingbird)                                               | Generating mock, stub, and verify objects in Swift unit tests        |
 
@@ -140,7 +140,7 @@ get them by following these steps:
 * Integrate with **Fastlane** with **Bitrise**
 * CI/CD using [GitHub Actions](https://docs.github.com/en/actions) & [Bitrise](https://bitrise.io)
 * UI Testing
-* Integrate with [Sentry](https://sentry.io) [codecov](https://about.codecov.io)
+* Integrate with [Sentry](https://sentry.io) & [codecov](https://about.codecov.io)
 
 ## Development Environment
 
