@@ -34,4 +34,4 @@ extension Bundle {
        UserDefaults.standard.synchronize()
    }
 }
-// swiftlint:enable all
+// swiftlint:enable all 
