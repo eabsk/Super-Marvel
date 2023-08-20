@@ -3,6 +3,7 @@
 </p>
   <h1 align="center">Super-Marvel 🚀</h1> 
   <p align="center">
+<a href="https://www.youtube.com/watch?v=OKXaDq307LM" rel="nofollow"><img src="https://camo.githubusercontent.com/082ddbfd956a5dd61cf444a43be80704940726d6f5eec80f8e0d894348d26219/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030303f7374796c653d666c6174266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/youtube-%23FF0000?style=flat&amp;logo=youtube&amp;logoColor=white" style="max-height: 100%;"></a>
 <a href="https://github.com/eabsk/Super-Marvel/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
 alt="License: MIT" />
@@ -20,11 +21,11 @@ This app is created as a personal project to showcase my skills and passion for 
 <br>
 </p>
 
-
 <!-- TOC -->
+  * [Video](https://www.youtube.com/watch?v=OKXaDq307LM)
   * [Screenshots](#screenshots)
   * [Setup](#setup)
-  * [Quick start](#quick-start)
+  * [Marvel APIs](#marvel-apis)
   * [Folder Structure](#folder-structure)
   * [Tools & Frameworks Used](#tools--frameworks-used)
   * [Upcoming Features](#upcoming-features)
@@ -33,7 +34,6 @@ This app is created as a personal project to showcase my skills and passion for 
 <!-- TOC -->
 
 ## Screenshots
-
 <img src="https://imgur.com/x2GpoJc.png" alt="Light Splash"  height=350>  &nbsp; <img src="https://imgur.com/WWnoPKD.png" alt="Light Home" height=350> &nbsp; <img src="https://imgur.com/hDhmPKy.png" alt="Dark Home"  height=350> &nbsp; <img src="https://imgur.com/L6av6tp.png" alt="Dark Character Profile" height=350> &nbsp; <img src="https://imgur.com/e290qe6.png" alt="Light Character Profile"  height=350>
 
 ## Setup
@@ -63,20 +63,8 @@ so please everyone, follow the following steps to make sure you have the appropr
     bundle install
     ```
     `Note: Try to restart the terminal and open it in the project directory again if you can't install the gems`
-6. Cocoapods Installing `in the project directory` by running:
-    ```shell
-    bundle exec pod install
-    ```
-7. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (On-Progress)
-
-## Quick start
-As this project uses the Marvel API, you need to get your own API keys to run the project. You can
-get them by following these steps:
-
-1. Go to the [Marvel Developer Portal](https://developer.marvel.com/) and create an account.
-2. Once you have an account, go to the [Get a Key](https://developer.marvel.com/account) page and
-   get your public and private keys.
-3. Create a file called `.env` in the root directory of the project and add the following lines to
+5. [Arkana](https://github.com/rogerluan/arkana) Environment file<br>
+   Create a file called `.env` in the root directory of the project and add the following lines to
    it:
     ```shell
     MarvelPrivateKey=your_private_key
@@ -84,12 +72,28 @@ get them by following these steps:
     MarvelHashKey=make_hash_by_MD5
     MarvelTimeStamp=current_time_stamp
     ```
-4. Run the following command to generate the [ArkanaKeys](https://github.com/rogerluan/arkana) local
+    `To get your own keys, look at` [Marvel APIs](#marvel-apis) to start using **Marvel APIs** Keys.
+   
+6. Run the following command to generate the [ArkanaKeys](https://github.com/rogerluan/arkana) local
    package that will be used to securely
    fetch your keys in runtime:
     ```shell
     bin/arkana
+    ``` 
+
+7. Cocoapods Installation `in the project directory` by running:
+    ```shell
+    bundle exec pod install
     ```
+8. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (Configured)
+
+## Marvel APIs
+As this project uses the Marvel API, you need to get your own API keys to run the project. You can
+get them by following these steps:
+
+1. Go to the [Marvel Developer Portal](https://developer.marvel.com/) and create an account.
+2. Once you have an account, go to the [Get a Key](https://developer.marvel.com/account) page and
+   get your public and private keys.
 
 ## Folder Structure
 
