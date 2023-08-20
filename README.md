@@ -27,8 +27,8 @@ This app is created as a personal project to showcase my skills and passion for 
   * [Quick start](#quick-start)
   * [Folder Structure](#folder-structure)
   * [Tools & Frameworks Used](#tools--frameworks-used)
+  * [Upcoming Features](#upcoming-features)
   * [Development Environment](#development-environment)
-  * [CI Pipeline](#ci-pipeline)
   * [License](#license)
 <!-- TOC -->
 
