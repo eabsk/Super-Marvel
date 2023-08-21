@@ -61,6 +61,7 @@
 		A27FB5BC2A8D6F920085F188 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FB5BB2A8D6F920085F188 /* CharacterModel.swift */; };
 		A29266672A916C94002F4917 /* Info-development.plist in Resources */ = {isa = PBXBuildFile; fileRef = A29266652A916C94002F4917 /* Info-development.plist */; };
 		A29266682A916C94002F4917 /* Info-staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = A29266662A916C94002F4917 /* Info-staging.plist */; };
+		A292666E2A92E2D4002F4917 /* CharacterUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A292666D2A92E2D4002F4917 /* CharacterUC.swift */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
 		A2D7DFFB2A881A2000E7BA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF92A881A2000E7BA04 /* LaunchScreen.storyboard */; };
@@ -167,6 +168,7 @@
 		A29266622A914F1C002F4917 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
 		A29266652A916C94002F4917 /* Info-development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-development.plist"; sourceTree = "<group>"; };
 		A29266662A916C94002F4917 /* Info-staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-staging.plist"; sourceTree = "<group>"; };
+		A292666D2A92E2D4002F4917 /* CharacterUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUC.swift; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -600,6 +602,36 @@
 			path = PROD;
 			sourceTree = "<group>";
 		};
+		A29266692A92E1E6002F4917 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A292666A2A92E224002F4917 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A292666B2A92E296002F4917 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A292666C2A92E2A8002F4917 /* Character */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A292666C2A92E2A8002F4917 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				A292666D2A92E2D4002F4917 /* CharacterUC.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		A2D7DFE22A881A1D00E7BA04 = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +663,7 @@
 				A27FB5582A8B829B0085F188 /* Networking */,
 				A27FB5692A8C18DF0085F188 /* APIs */,
 				A27FB56C2A8C1F3A0085F188 /* Requests */,
+				A292666B2A92E296002F4917 /* UseCases */,
 				A27FB59E2A8D002F0085F188 /* Repositories */,
 				A2D7E0562A88652100E7BA04 /* Base */,
 				A27FB5742A8C2C6B0085F188 /* Coordinators */,
@@ -647,6 +680,8 @@
 		A2D7E0042A881A2100E7BA04 /* SuperMarvelTests */ = {
 			isa = PBXGroup;
 			children = (
+				A292666A2A92E224002F4917 /* Requests */,
+				A29266692A92E1E6002F4917 /* Repository */,
 				A2D7E0052A881A2100E7BA04 /* SuperMarvelTests.swift */,
 			);
 			path = SuperMarvelTests;
@@ -1100,6 +1135,7 @@
 				A2566CC62A8D8A130000DF8B /* UICollectionView+ Ex.swift in Sources */,
 				A27FB5B42A8D02240085F188 /* CharactersFactory.swift in Sources */,
 				A27FB5702A8C1F6F0085F188 /* BaseRequest.swift in Sources */,
+				A292666E2A92E2D4002F4917 /* CharacterUC.swift in Sources */,
 				A27FB5B52A8D02240085F188 /* CharactersViewModel.swift in Sources */,
 				A2566CF92A8EC6F10000DF8B /* TagCollectionViewCell.swift in Sources */,
 				A2D7E0372A88578100E7BA04 /* AppObservers.swift in Sources */,

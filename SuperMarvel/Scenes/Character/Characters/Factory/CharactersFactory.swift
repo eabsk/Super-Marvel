@@ -3,9 +3,13 @@ import UIKit
 extension MainFactory {
     
     func resolveCharactersViewModel() -> CharactersViewModelProtocol {
-        CharactersViewModel()
+        CharactersViewModel(charactersUC: resolveCharacterUC())
     }
     
+    func resolveCharacterUC() -> any CharactersUC {
+        DefaultCharactersUC(repository: CharacterRepository())
+    }
+
     func resolveCharactersController(coordinator: CharactersCoordinatorProtocol) -> CharactersViewController {
         let vc = CharactersViewController()
         vc.coordinator = coordinator
