@@ -64,7 +64,6 @@
 		A292666E2A92E2D4002F4917 /* CharacterUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A292666D2A92E2D4002F4917 /* CharacterUC.swift */; };
 		A29266702A92E83B002F4917 /* CharactersUCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A292666F2A92E83B002F4917 /* CharactersUCTest.swift */; };
 		A29266722A92E8B1002F4917 /* CharactersRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29266712A92E8B1002F4917 /* CharactersRepoTest.swift */; };
-		A29266782A92E937002F4917 /* CharactersViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29266772A92E937002F4917 /* CharactersViewModelTest.swift */; };
 		A292667A2A92F913002F4917 /* ResonseResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29266792A92F913002F4917 /* ResonseResults.swift */; };
 		A2D7DFEF2A881A1D00E7BA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */; };
 		A2D7DFF82A881A2000E7BA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D7DFF72A881A2000E7BA04 /* Assets.xcassets */; };
@@ -174,7 +173,6 @@
 		A292666D2A92E2D4002F4917 /* CharacterUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUC.swift; sourceTree = "<group>"; };
 		A292666F2A92E83B002F4917 /* CharactersUCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersUCTest.swift; sourceTree = "<group>"; };
 		A29266712A92E8B1002F4917 /* CharactersRepoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepoTest.swift; sourceTree = "<group>"; };
-		A29266772A92E937002F4917 /* CharactersViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelTest.swift; sourceTree = "<group>"; };
 		A29266792A92F913002F4917 /* ResonseResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResonseResults.swift; sourceTree = "<group>"; };
 		A2D7DFEB2A881A1D00E7BA04 /* SuperMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D7DFEE2A881A1D00E7BA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -640,26 +638,10 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
-		A29266732A92E8C7002F4917 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A29266752A92E8F2002F4917 /* Characters */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		A29266742A92E8D6002F4917 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
 				A29266712A92E8B1002F4917 /* CharactersRepoTest.swift */,
-			);
-			path = Characters;
-			sourceTree = "<group>";
-		};
-		A29266752A92E8F2002F4917 /* Characters */ = {
-			isa = PBXGroup;
-			children = (
-				A29266772A92E937002F4917 /* CharactersViewModelTest.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -722,7 +704,6 @@
 			children = (
 				A29266692A92E1E6002F4917 /* Repository */,
 				A292666A2A92E224002F4917 /* UseCase */,
-				A29266732A92E8C7002F4917 /* ViewModel */,
 			);
 			path = SuperMarvelTests;
 			sourceTree = "<group>";
@@ -1227,7 +1208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A29266782A92E937002F4917 /* CharactersViewModelTest.swift in Sources */,
 				A29266722A92E8B1002F4917 /* CharactersRepoTest.swift in Sources */,
 				A29266702A92E83B002F4917 /* CharactersUCTest.swift in Sources */,
 			);
