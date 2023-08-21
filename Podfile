@@ -24,7 +24,8 @@ target 'SuperMarvel' do
   target 'SuperMarvelTests' do
     inherit! :search_paths
     # Pods for testing
-    
+    pod 'MockingbirdFramework', '~> 0.20'
+
   end
 
   target 'SuperMarvelUITests' do
