@@ -1,16 +1,20 @@
+import Foundation
 import Combine
 
-protocol CharacterRepositoryProtocol {
-    typealias CharactersResults = Future<BaseResponseModel<CharacterDTO>, ServerError>
+protocol CharacterRepositoryProtocol: AnyObject {
     func getCharacters(offset: Int) -> CharactersResults
 }
 
-class CharacterRepository: CharacterRepositoryProtocol {
+final class CharacterRepository: NSObject, CharacterRepositoryProtocol {
+
+    private let characterRequests: CharacterRequestProtocol
     
-    private let characterRequests: CharacterRequestProtocol = CharacterRequest()
+    init(characterRequests: CharacterRequestProtocol) {
+        self.characterRequests = characterRequests
+    }
     
     func getCharacters(offset: Int) -> CharactersResults {
-        characterRequests.getCharacters(offset: offset)
+        CharacterRequest().getCharacters(offset: offset)
     }
     
 }
