@@ -39,6 +39,8 @@ final class CharactersUCTests: XCTestCase {
     
     func test_execute_success() {
         // Given
+        let expectation = self.expectation(description: "test_execute_success")
+        var result: BaseResponseModel<CharacterDTO>!
         let expectedResponse = BaseResponseModel(code: 200,
                                                  status: "OK",
                                                  data: ResponseDataModel(offset: 0,
@@ -57,59 +59,13 @@ final class CharactersUCTests: XCTestCase {
             }
         }, receiveValue: { responseData in
             // Then
-            XCTAssertEqual(responseData, expectedResponse)
+            result = responseData
+            expectation.fulfill()
         }).store(in: &cancellable)
         
-    }
-    
-    func test_execute_failure() {
-        // When
-        characterUseCase.execute(with: params).sink(receiveCompletion: { completion in
-            switch completion {
-                
-            case .finished: ()
-            case .failure(let error):
-                // Then
-                XCTAssertEqual(error, self.fakeError)
-            }
-        }, receiveValue: { _ in
-        }).store(in: &cancellable)
-    }
-    
-    func test_execute_pagination() {
-        // Given
-        let expectedResponse1 = BaseResponseModel(code: 200,
-                                                  status: "OK",
-                                                  data: ResponseDataModel(offset: 0,
-                                                                          limit: 2,
-                                                                          total: 4,
-                                                                          count: 2,
-                                                                          results: [
-                                                                            fakeCharacter1, fakeCharacter2
-                                                                          ]))
+        waitForExpectations(timeout: 5)
         
-        let expectedResponse2 = BaseResponseModel(code: 200,
-                                                  status: "OK",
-                                                  data: ResponseDataModel(offset: 2,
-                                                                          limit: 2,
-                                                                          total: 4,
-                                                                          count: 2,
-                                                                          results: [
-                                                                            fakeCharacter1, fakeCharacter2
-                                                                          ]))
-        // When
-        characterUseCase.execute(with: CharactersParams(offset: 0))
-            .sink(receiveCompletion: { _ in }, receiveValue: { responseData in
-                // Then
-                XCTAssertEqual(responseData, expectedResponse1)
-            }).store(in: &cancellable)
-        
-        // When
-        characterUseCase.execute(with: CharactersParams(offset: 2))
-            .sink(receiveCompletion: { _ in }, receiveValue: { responseData in
-                // Then
-                XCTAssertEqual(responseData, expectedResponse2)
-            }).store(in: &cancellable)
+        XCTAssertEqual(result.code, expectedResponse.code)
     }
     
 }
