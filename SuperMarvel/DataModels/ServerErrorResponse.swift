@@ -5,7 +5,7 @@ class ServerErrorDTO: Codable {
     let code: String?
 }
 
-enum ServerError: Error {
+enum ServerError: Error, Equatable {
     
     case network
     case serialization

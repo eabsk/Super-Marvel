@@ -18,9 +18,10 @@ protocol CharactersViewModelProtocol {
 class CharactersViewModel {
     
     private var cancelAbles: Set<AnyCancellable> = []
-    private let characterRepo: CharacterRepositoryProtocol = CharacterRepository()
     
+    private let charactersUC: CharactersUC
     private var characters: [CharacterModel] = []
+    
     private var offset = 0
     private(set) var totalCharactersCount: Int = 0
     
@@ -34,9 +35,14 @@ class CharactersViewModel {
     @Published private var isEmptyData = false
     var isEmptyStatePublisher: AnyPublisher<Bool, Never> { $isEmptyData.eraseToAnyPublisher() }
     
+    init(charactersUC: CharactersUC) {
+        self.charactersUC = charactersUC
+    }
+    
     func getCharacters() {
         isLoading = true
-        let characters = characterRepo.getCharacters(offset: offset)
+        let params = CharactersParams(offset: offset)
+        let characters = charactersUC.execute(with: params)
         characters.sink { completion in
             switch completion {
             case .finished:
