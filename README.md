@@ -56,14 +56,17 @@ so please everyone, follow the following steps to make sure you have the appropr
    It is recommended that you use [**Bundler**](http://bundler.io) and Gemfile to define the dependency of the app.
    <br>Install Bundler by running:
     ```shell
-    gem install bundler
+    sudo gem install bundler
     ```
 4. Install Ruby Gems `in the project directory` by running:
     ```shell
-    bundle install
+    sudo bundle install
     ```
     `Note: Try to restart the terminal and open it in the project directory again if you can't install the gems`
-5. [Arkana](https://github.com/rogerluan/arkana) Environment file<br>
+5. [Arkana](https://github.com/rogerluan/arkana) Environment file<br><br>
+   **NOTE**: `To skip step #4 and step #5,
+     check out this branch` [**quick-start**](https://github.com/eabsk/Super-Marvel/tree/quick-start)
+
    Create a file called `.env` in the root directory of the project and add the following lines to
    it:
     ```shell
@@ -74,18 +77,18 @@ so please everyone, follow the following steps to make sure you have the appropr
     ```
     `To get your own keys, look at` [Marvel APIs](#marvel-apis) to start using **Marvel APIs** Keys.
    
-6. Run the following command to generate the [ArkanaKeys](https://github.com/rogerluan/arkana) local
+7. Run the following command to generate the [ArkanaKeys](https://github.com/rogerluan/arkana) local
    package that will be used to securely
    fetch your keys in runtime:
     ```shell
     bin/arkana
     ``` 
 
-7. Cocoapods Installation `in the project directory` by running:
+8. Cocoapods Installation `in the project directory` by running:
     ```shell
     bundle exec pod install
     ```
-8. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (Configured)
+9. [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/) (Configured)
 
 ## Marvel APIs
 As this project uses the Marvel API, you need to get your own API keys to run the project. You can
@@ -101,13 +104,14 @@ get them by following these steps:
 📦SuperMarvel
 ┣ 📂AppSchems
 ┣ 📂Core
-┃ 📂Extensions
 ┣ 📂DataModels
 ┃ ┣ 📂Mappers
 ┃ ┣ 📂Character
 ┣ 📂Networking
 ┣ 📂APIs
 ┣ 📂Requests
+┣ 📂UseCases
+┃ ┣ 📂Character
 ┃ 📂Repositories
 ┣ 📂Base
 ┃ ┣ 📂Config
@@ -116,7 +120,6 @@ get them by following these steps:
 ┃ ┣ 📂Services
 ┃ ┗ 📂Observers
 ┣ 📂Coordinators
-┃ ┣ 📂Base
 ┣ 📂Scenes
 ┃ ┣ 📂Splash
 ┃ ┣ 📂Character
@@ -145,13 +148,11 @@ get them by following these steps:
 | [Mockingbird](https://github.com/birdrides/mockingbird)                                               | Generating mock, stub, and verify objects in Swift unit tests        |
 
 ## Upcoming Features
-* Integrate with **Fastlane** with **Bitrise**
-* CI/CD using [GitHub Actions](https://docs.github.com/en/actions) & [Bitrise](https://bitrise.io)
+* Integrate **Bitrise** with **Fastlane** 
 * UI Testing
 * Integrate with [Sentry](https://sentry.io) & [codecov](https://about.codecov.io)
 
 ## Development Environment
-
 ![Swift Badge](https://img.shields.io/badge/MADE%20WITH-SWIFT-red?style=for-the-badge&logo=swift)
 
 * Xcode 14.3.1
