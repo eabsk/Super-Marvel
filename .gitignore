@@ -46,9 +46,6 @@ SuperMarvel.xcworkspace/xcshareddata/
 
 .env
 
-ArkanaKeys/ArkanaKeys/
-
-ArkanaKeys/ArkanaKeysInterfaces/
 
 # Generated
 *.generated.swift
