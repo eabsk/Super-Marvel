@@ -1,7 +1,6 @@
 import Combine
 
 protocol CharacterRequestProtocol {
-    typealias CharactersResults = Future<BaseResponseModel<CharacterDTO>, ServerError>
     func getCharacters(offset: Int) -> CharactersResults
 }
 

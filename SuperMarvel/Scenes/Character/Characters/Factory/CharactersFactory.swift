@@ -6,8 +6,12 @@ extension MainFactory {
         CharactersViewModel(charactersUC: resolveCharacterUC())
     }
     
-    func resolveCharacterUC() -> any CharactersUC {
-        DefaultCharactersUC(repository: CharacterRepository())
+    func resolveCharacterUC() -> CharactersUC {
+        DefaultCharactersUC(repository: resolveCharacterRepo())
+    }
+    
+    func resolveCharacterRepo() -> CharacterRepositoryProtocol {
+        CharacterRepository(characterRequests: CharacterRequest())
     }
 
     func resolveCharactersController(coordinator: CharactersCoordinatorProtocol) -> CharactersViewController {

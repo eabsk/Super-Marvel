@@ -1,17 +1,42 @@
 import Foundation
 
-struct CharacterDTO: Codable {
+struct CharacterDTO: Codable, Equatable {
+    
     let id: Int?
     let name, description: String?
     let modified: String?
     let thumbnail: Thumbnail?
     let comics, series: Comics?
     let stories: Stories?
-
     var imageUrlPath: String {
         (thumbnail?.path ?? "") + "."
         + (thumbnail?.thumbnailExtension ?? "")
     }
+    
+    init(id: Int? = nil,
+         name: String? = nil,
+         description: String? = nil,
+         modified: String? = nil,
+         thumbnail: Thumbnail? = nil,
+         comics: Comics? = nil,
+         series: Comics? = nil,
+         stories: Stories? = nil) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.modified = modified
+        self.thumbnail = thumbnail
+        self.comics = comics
+        self.series = series
+        self.stories = stories
+    }
+   
+    static func == (lhs: CharacterDTO, rhs: CharacterDTO) -> Bool {
+        guard let lhsId = lhs.id else { return false }
+        guard let rhsId = rhs.id else { return false }
+        return lhsId == rhsId
+    }
+    
 }
 
 // MARK: - Comics

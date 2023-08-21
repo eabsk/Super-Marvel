@@ -19,9 +19,9 @@ class CharactersViewModel {
     
     private var cancelAbles: Set<AnyCancellable> = []
     
-    private let charactersUC: any CharactersUC
-    
+    private let charactersUC: CharactersUC
     private var characters: [CharacterModel] = []
+    
     private var offset = 0
     private(set) var totalCharactersCount: Int = 0
     
@@ -35,7 +35,7 @@ class CharactersViewModel {
     @Published private var isEmptyData = false
     var isEmptyStatePublisher: AnyPublisher<Bool, Never> { $isEmptyData.eraseToAnyPublisher() }
     
-    init(charactersUC: any CharactersUC) {
+    init(charactersUC: CharactersUC) {
         self.charactersUC = charactersUC
     }
     
